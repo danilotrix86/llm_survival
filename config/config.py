@@ -1,0 +1,2 @@
+GPT_ENGINE = "gpt-4o"
+LOGS_SIZE = 8
