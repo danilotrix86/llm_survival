@@ -1,0 +1,48 @@
+{
+  "actions": [
+    {
+      "name": "pick_sticks",
+      "description": "Pick up sticks to build items."
+    },
+    {
+      "name": "pick_stones",
+      "description": "Pick up stones to build items."
+    },
+    {
+      "name": "pick_fibers",
+      "description": "Pick up fibers to build items."
+    },
+    {
+      "name": "cut wood",
+      "description": "Cut wood to build items. Ax is needed."
+    },
+    {
+      "name": "eat",
+      "description": "Eat to restore health."
+    },
+    {
+      "name": "drink",
+      "description": "Drink to restore thirst."
+    },
+    {
+      "name": "sleep",
+      "description": "Sleep to restore energy."
+    },
+    {
+      "name": "explore",
+      "description": "Explore new areas in the map."
+    },
+    {
+      "name": "craft_ax",
+      "description": "Craft a Ax to cut wood. To craft, you need 2 sticks and 1 stone."
+    },
+    {
+      "name": "craft_firecamp",
+      "description": "Craft a firecamp to decrease stress saying next to it. You need 2 sticks and 4 stones"
+    },
+    {
+      "name": "build_shelter",
+      "description": "Build a shelter to keep your energy level up. You need 4 woods, 2 sticks and 2 fibers"
+    }
+  ]
+}

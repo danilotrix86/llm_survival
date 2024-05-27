@@ -1,0 +1,20 @@
+{
+    "player_info": [
+        {
+            "name": "health",
+            "description": "Good"
+        },
+        {
+            "name": "thirst",
+            "description": "Good"
+        },
+        {
+            "name": "hunger",
+            "description": "Normal"
+        },
+        {
+            "name": "energy",
+            "description": "Normal"
+        }
+    ]
+}

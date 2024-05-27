@@ -1,0 +1,10 @@
+[
+    {"name": "instructions", "description": "these are the instructions for the main character behaviour"},
+    {"name": "actions", "description": "these are the list of possible actions that the character can play"},
+    {"name": "logs", "description": "these are the logs of previous actions executed by the character"},
+    {"name": "game_info", "description": "this is the game information"},
+    {"name": "player_info", "description": "these are the player variables. Options are Very Bad, Bad, Normal, Good, Very Good. Bad means you need to improve, Good means you are doing well."},
+    {"name": "inventory", "description": "these are the items in the player's inventory"},
+    {"name": "warnings", "description": "these are warnings for the character to pay attention to"},
+    {"name": "objectives", "description": "these are the main game objectives"}
+]
