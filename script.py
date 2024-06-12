@@ -28,6 +28,7 @@ def get_next_action(action_request: ActionRequest):
         # Update memory with the action request
         memory.update_memory(action_request)
 
+        logger.info(f"Memory tokens: {memory.num_tokens()}")
         # Get next action
         decisions = Decision(memory)
         next_action = decisions.get_next_action()
