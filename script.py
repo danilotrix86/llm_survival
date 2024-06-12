@@ -4,6 +4,7 @@ from validation.pydantic_val import ActionRequest
 from Brain.memory import Memory
 from settings.utils import load_categories_from_json
 from Brain.decisions import Decision
+import json
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -32,10 +33,18 @@ def get_next_action(action_request: ActionRequest):
         # Get next action
         decisions = Decision(memory)
         next_action = decisions.get_next_action()
-        
-        logger.info(f"Next action: {next_action}")
-        
-        return next_action
+        # Parse the string into a dictionary
+        next_action_dict = json.loads(next_action)
+
+        # Extract the action and reason
+        action = next_action_dict.get("action")
+        reason = next_action_dict.get("reason")
+
+        logger.info(f"Next action: {action}, Reason: {reason}") 
+
+
+        return action, reason
+    
     
     except Exception as e:
         logger.error(f"Error processing request: {e}")

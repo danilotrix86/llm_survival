@@ -1,3 +1,12 @@
 {
-  "logs": []
+  "logs": [
+    {
+      "name": "pick_berry",
+      "description": "The action 'pick_berry' was executed with status 'success' and message: 'You found some delicious berries and you picked them up!'."
+    },
+    {
+      "name": "pick_berry",
+      "description": "The action 'pick_berry' was executed with status 'success' and message: 'You found some delicious berries and you picked them up!'."
+    }
+  ]
 }
