@@ -63,7 +63,7 @@ pythonCopy codepayload = {
         "raft": 0
     },
     "player_info": {
-        "health": "Gianluca",
+        "health": "Good",
         "hunger": "Very Good",
         "thirst": "Good",
         "energy": "Very low"
