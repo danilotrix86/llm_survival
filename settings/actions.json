@@ -13,7 +13,7 @@
       "description": "Pick up fibers to build items."
     },
     {
-      "name": "cut wood",
+      "name": "cut_wood",
       "description": "Cut wood to build items. Ax is needed."
     },
     {

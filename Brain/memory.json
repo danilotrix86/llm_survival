@@ -6,5 +6,6 @@
     {"name": "player_info", "description": "these are the player variables. Options are Very Bad, Bad, Normal, Good, Very Good. Bad means you need to improve, Good means you are doing well."},
     {"name": "inventory", "description": "these are the items in the player's inventory"},
     {"name": "warnings", "description": "these are warnings for the character to pay attention to"},
+    {"name": "current_plan", "description":"This is the current plan of action"},
     {"name": "objectives", "description": "these are the main game objectives"}
 ]

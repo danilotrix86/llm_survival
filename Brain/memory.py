@@ -1,6 +1,10 @@
+import logging
 import tiktoken
 from config import config
 from settings.utils import load_from_json, save_to_json
+
+# Initialize the logger
+logger = logging.getLogger(__name__)
 
 class Memory:
     """
@@ -24,6 +28,7 @@ class Memory:
         self.memory = {}
         self.base_path = base_path
         self.load_memory(categories)
+        logger.info("Memory initialized.")
 
     def load_memory(self, categories):
         """
@@ -43,6 +48,7 @@ class Memory:
                 'description': description
             }
             self._load_category_from_file(name)
+        logger.info("Memory categories loaded.")
 
     def _load_category_from_file(self, category):
         """
@@ -55,6 +61,7 @@ class Memory:
         """
         category_file = f"{self.base_path}/{category}.json"
         self.memory[category]['content'] = load_from_json(category, category_file)
+        logger.info(f"Loaded category '{category}' from file.")
 
     def _save_category_to_file(self, category):
         """
@@ -67,6 +74,7 @@ class Memory:
         """
         category_file = f"{self.base_path}/{category}.json"
         save_to_json(category, category_file, self.memory[category]['content'])
+        logger.info(f"Saved category '{category}' to file.")
 
     def _modify_category(self, category, items=None, single_item=None):
         """
@@ -92,8 +100,9 @@ class Memory:
         
         # Save changes to the JSON file
         self._save_category_to_file(category)
+        logger.info(f"Modified category '{category}'.")
 
-    def add_item(self, category, name=None, description=None, items=None):
+    def add_item(self, category, name=None, description=None, quantity=None, items=None):
         """
         Adds an item or multiple items to the specified category list.
 
@@ -105,14 +114,19 @@ class Memory:
             The name of the item (only used if adding a single item).
         description : str, optional
             The description of the item (only used if adding a single item).
+        quantity : int, optional
+            The quantity of the item (only used if adding a single item to 'inventory').
         items : list of dict, optional
-            A list of items to add, where each item is a dictionary with 'name' and 'description' keys.
+            A list of items to add, where each item is a dictionary with 'name' and 'description' (and 'quantity' for 'inventory').
         """
         if items:
             self._modify_category(category, items=items)
         else:
             item = {"name": name, "description": description}
+            if category == 'inventory':
+                item["quantity"] = quantity
             self._modify_category(category, single_item=item)
+        logger.info(f"Added item(s) to category '{category}'.")
 
     def remove_item(self, category, name):
         """
@@ -128,8 +142,9 @@ class Memory:
         self.memory[category]['content'] = [item for item in self.memory[category]['content'] if item['name'] != name]
         # Save changes to the JSON file
         self._save_category_to_file(category)
+        logger.info(f"Removed item '{name}' from category '{category}'.")
 
-    def update_item(self, category, name, new_description):
+    def update_item(self, category, name, new_description=None, new_quantity=None):
         """
         Updates the description of an item with the given name in the specified category list.
 
@@ -139,15 +154,21 @@ class Memory:
             The category in which the item will be updated (e.g., 'instruction', 'actions', 'logs').
         name : str
             The name of the item to be updated.
-        new_description : str
+        new_description : str, optional
             The new description of the item.
+        new_quantity : int, optional
+            The new quantity of the item (only used for 'inventory').
         """
         for item in self.memory[category]['content']:
             if item['name'] == name:
-                item['description'] = new_description
+                if new_description:
+                    item['description'] = new_description
+                if category == 'inventory' and new_quantity is not None:
+                    item['quantity'] = new_quantity
                 break
         # Save changes to the JSON file
         self._save_category_to_file(category)
+        logger.info(f"Updated item '{name}' in category '{category}'.")
 
     def get_memory_state(self):
         """
@@ -189,9 +210,14 @@ class Memory:
             return f"Category '{category_name}' not found in memory."
 
         data = self.memory[category_name]
-        return f"{category_name} ({data['description']}):\n" + '\n'.join(
-            [f"  - {item['name']}: {item['description']}" for item in data['content']]
-        )
+        if category_name == 'inventory':
+            return f"{category_name} ({data['description']}):\n" + '\n'.join(
+                [f"  - {item['name']}: {item['description']} (Quantity: {item['quantity']})" for item in data['content']]
+            )
+        else:
+            return f"{category_name} ({data['description']}):\n" + '\n'.join(
+                [f"  - {item['name']}: {item['description']}" for item in data['content']]
+            )
 
     def num_tokens(self, encoding_name="cl100k_base"):
         """
@@ -209,3 +235,44 @@ class Memory:
         """
         encoding = tiktoken.get_encoding(encoding_name)
         return len(encoding.encode(self.to_string()))
+
+    def update_memory(self, action_request):
+        """
+        Updates the memory with new content based on the ActionRequest object.
+
+        Parameters:
+        -----------
+        action_request : ActionRequest
+            An instance of the ActionRequest Pydantic model containing the new memory content.
+        """
+        try:
+            # Extract individual fields from the action_request
+            action = action_request.action
+            status = action_request.status
+            message = action_request.message
+            inventory = action_request.inventory.dict()    # This should be a dictionary
+            player_info = action_request.player_info.dict()  
+            
+            # Update the memory with the new content
+            for player_info_key in player_info:
+                self.update_item('player_info', player_info_key, new_description=player_info[player_info_key])
+
+            # Update the memory with the new log
+            full_log = f"The action '{action}' was executed with status '{status}' and message: '{message}'."
+            self.add_item('logs', name=action, description=full_log)
+
+            
+            logger.info(f"Inventory: {inventory}")
+            # Update the inventory
+            for item_name, item_quantity in inventory.items():
+                self.update_item('inventory', item_name, new_quantity=item_quantity)
+            
+            
+           
+        except KeyError as e:
+            logger.error(f"Key error: {e}")
+            raise
+        except Exception as e:
+            logger.error(f"Unexpected error: {e}")
+            raise
+

@@ -1,20 +1,20 @@
 {
-    "player_info": [
-        {
-            "name": "health",
-            "description": "Good"
-        },
-        {
-            "name": "thirst",
-            "description": "Good"
-        },
-        {
-            "name": "hunger",
-            "description": "Normal"
-        },
-        {
-            "name": "energy",
-            "description": "Normal"
-        }
-    ]
+  "player_info": [
+    {
+      "name": "health",
+      "description": "Gianluca"
+    },
+    {
+      "name": "thirst",
+      "description": "Good"
+    },
+    {
+      "name": "hunger",
+      "description": "Very Good"
+    },
+    {
+      "name": "energy",
+      "description": "Very low"
+    }
+  ]
 }

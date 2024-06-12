@@ -2,7 +2,58 @@
   "inventory": [
     {
       "name": "shelter",
-      "description": "You have a shelter to keep your energy level up."
+      "description": "The shelter will keep you warm and dry and allow you to sleep.",
+      "quantity": 1
+    },
+    {
+      "name": "fish",
+      "description": "It can be eaten for hunger.",
+      "quantity": 0
+    },
+    {
+      "name": "berry",
+      "description": "It can be eaten for hunger.",
+      "quantity": 20
+    },
+    {
+      "name": "water",
+      "description": "It can be drank for thirst.",
+      "quantity": 0
+    },
+    {
+      "name": "stick",
+      "description": "It can be used to craft items",
+      "quantity": 10
+    },
+    {
+      "name": "wood",
+      "description": "It can be used to craft items",
+      "quantity": 0
+    },
+    {
+      "name": "stone",
+      "description": "It can be used to craft items",
+      "quantity": 0
+    },
+    {
+      "name": "fiber",
+      "description": "It can be used to craft items",
+      "quantity": 0
+    },
+    {
+      "name": "ax",
+      "description": "It can be used to cut down trees and gather wood.",
+      "quantity": 0
+    },
+    {
+      "name": "firecamp",
+      "description": "It can be used to cook food and keep you warm at night.",
+      "quantity": 0
+    },
+    {
+      "name": "raft",
+      "description": "It can be used to escape the island.",
+      "quantity": 0
     }
   ]
 }
