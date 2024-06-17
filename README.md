@@ -1,8 +1,8 @@
 # LLM Survival
 
-This repository contains a project that simulates a survival game using a language model. Follow the instructions below to set up and run the project.
+This repository contains a project that simulates a survival game using a language model. Follow the instructions below to set up and run the server.
 
-## Setup
+## Server Setup
 
 Create a virtual environment folder:
 
@@ -44,7 +44,7 @@ The endpoint for the server is http://127.0.0.1:8000/next_action/.
 
 To send a request, define the payload as a dictionary:
 ```bash
-pythonCopy codepayload = {
+codepayload = {
     "action": "pick_berry",
     "status": "success",
     "message": "You found some delicious berries and you picked them up!",
