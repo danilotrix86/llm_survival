@@ -9,9 +9,8 @@
 		"ErrorCantAttack": "That object cannot be attacked",
 		
 		"drink.Success":     "Drank some water",
-		"grass.cut.Success": "Cut down some grass",
 		"interact.Success": "Interacted with {0}",
-		"collect.Success": "Collected {0}",
+		"pick.Success": "Picked up {0}",
 
 		"craft.ErrorMissingItems": "Cannot craft {0}, missing: {1}",
 		"craft.Success": "Crafted {0}",
