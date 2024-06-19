@@ -2,7 +2,7 @@ import logging
 from fastapi import FastAPI, Body
 from validation.pydantic_val import ActionRequest  # Importing Pydantic model for request validation
 from zeroshot.memory import Memory  # Importing Memory class
-from settings.utils import load_categories_from_json  # Utility function to load categories
+from settings.utils import load_categories_from_json , load_from_json # Utility function to load categories
 from zeroshot.decisions import Decision  # Importing Decision class
 import json
 from config import config  # Configuration settings
@@ -21,6 +21,15 @@ categories_file = 'zeroshot/memory.json'
 # Initialize memory with categories
 memory = Memory(load_categories_from_json(categories_file), 'settings')
 logger.info(f"Memory initialized: {memory.to_string()}")
+
+@app.get("/messages/")
+def get_messages():
+    messages_file = "settings/messages.json"
+    try:
+        return load_from_json("messages", messages_file)
+    except Exception as e:
+        logger.error(f"Error processing request: {e}")
+        return JSONResponse(status_code=500, content={"message":str(e)})
 
 @app.post("/next_action/")
 def get_next_action(action_request: ActionRequest = Body(...)):
