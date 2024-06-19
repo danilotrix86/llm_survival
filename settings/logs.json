@@ -1,12 +1,8 @@
 {
   "logs": [
     {
-      "name": "pick_berry",
-      "description": "The action 'pick_berry' was executed with status 'success' and message: 'You found some delicious berries and you picked them up!'."
-    },
-    {
-      "name": "pick_berry",
-      "description": "The action 'pick_berry' was executed with status 'success' and message: 'You found some delicious berries and you picked them up!'."
+      "name": "drink",
+      "description": "The action 'drink' was executed with status 'success' and message: 'You drank some water from the river. It was refreshing'."
     }
   ]
 }

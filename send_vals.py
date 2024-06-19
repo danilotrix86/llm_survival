@@ -1,39 +1,40 @@
-# send_request.py
-
 import requests
 
 url = "http://127.0.0.1:8000/next_action/"
 
 # Define the payload as a dictionary
 payload = {
-    "action": "pick_berry",
+    "action": "eat",
     "status": "success",
-    "message": "You found some delicious berries and you picked them up!",
+    "message": "You ate some berry from the tree. It was good",
     "inventory": {
-        "shelter": 1,
+        "shelter": 2,
         "food": 0,
         "water": 0,
         "fish": 0,
-        "berry": 20,
-        "stick": 10,
-        "wood": 0,
+        "berry": 15,
+        "stick": 8,
+        "wood": 7,
         "stone": 0,
         "fiber": 0,
-        "ax": 0,
+        "ax": 1,
         "firecamp": 0,
         "raft": 0
     },
     "player_info": {
-        "health": "Gianluca",
+        "health": "Very Good",
         "hunger": "Very Good",
-        "thirst": "Good",
-        "energy": "Very low"
+        "thirst": "Very Good",
+        "energy": "Good"
     }
 }
 
-# Send the POST request
+# Send the POST request with JSON payload
 response = requests.post(url, json=payload)
 
 # Print the response from the server
 print(response.status_code)
-print(response.json())
+try:
+    print(response.json())
+except requests.exceptions.JSONDecodeError:
+    print(response.text)

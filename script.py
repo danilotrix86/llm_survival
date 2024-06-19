@@ -1,10 +1,12 @@
 import logging
-from fastapi import FastAPI, HTTPException
-from validation.pydantic_val import ActionRequest
-from Brain.memory import Memory
-from settings.utils import load_categories_from_json
-from Brain.decisions import Decision
+from fastapi import FastAPI, Body
+from validation.pydantic_val import ActionRequest  # Importing Pydantic model for request validation
+from zeroshot.memory import Memory  # Importing Memory class
+from settings.utils import load_categories_from_json  # Utility function to load categories
+from zeroshot.decisions import Decision  # Importing Decision class
 import json
+from config import config  # Configuration settings
+from fastapi.responses import JSONResponse  # JSON response for error handling
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -14,38 +16,70 @@ logger = logging.getLogger(__name__)
 app = FastAPI()
 
 # Load categories file path
-categories_file = 'Brain/memory.json'
+categories_file = 'zeroshot/memory.json'
 
 # Initialize memory with categories
 memory = Memory(load_categories_from_json(categories_file), 'settings')
 logger.info(f"Memory initialized: {memory.to_string()}")
 
 @app.post("/next_action/")
-def get_next_action(action_request: ActionRequest):
+def get_next_action(action_request: ActionRequest = Body(...)):
+    """
+    Endpoint to determine the next action based on the request.
+
+    Parameters:
+    - action_request: The request body containing the action details
+
+    Returns:
+    - action: The next action to be performed
+    - observation: The observation related to the action
+    """
     try:
         # Log the received request data
         logger.info(f"Received request: {action_request}")
 
-        # Update memory with the action request
-        memory.update_memory(action_request)
+        # Process based on the configured approach
+        if config.APPROACH == "ZEROSHOT":
+            # Update memory with the action request
+            memory.update_memory(action_request)
 
-        logger.info(f"Memory tokens: {memory.num_tokens()}")
-        # Get next action
-        decisions = Decision(memory)
-        next_action = decisions.get_next_action()
-        # Parse the string into a dictionary
-        next_action_dict = json.loads(next_action)
+            logger.info(f"Memory tokens: {memory.num_tokens()}")
 
-        # Extract the action and reason
-        action = next_action_dict.get("action")
-        reason = next_action_dict.get("reason")
+            # Get the next action from Decision class
+            decisions = Decision(memory)
+            next_action = decisions.get_next_action()
 
-        logger.info(f"Next action: {action}, Reason: {reason}") 
+            # Parse the next action JSON string into a dictionary
+            next_action_dict = json.loads(next_action)
+            action = next_action_dict.get("action")
+            observation = next_action_dict.get("observation")
 
+            return action, observation
 
-        return action, reason
-    
-    
+        elif config.APPROACH == "AGENTIC":
+            from dotenv import load_dotenv
+            from agents.agent import SurvivalGameAgent
+            import os
+
+            # Load environment variables from .env file
+            load_dotenv()
+
+            # Access the environment variables
+            api_key = os.getenv("API_KEY")
+
+            agent = SurvivalGameAgent(api_key)
+            agent.initialize_agent()
+
+            # Input data for the agent
+            input_data = {
+                "input": "Return only a JSON object with the next action and observation (no other information added). The action should be only 1 of the actions in the actions book. You can't use other actions",
+                "chat_history": []
+            }
+
+            action, observation = agent.execute_agent(input_data)
+            return action, observation
+
     except Exception as e:
         logger.error(f"Error processing request: {e}")
-        raise HTTPException(status_code=400, detail=str(e))
+        return JSONResponse(status_code=500, content={"message": str(e)})
+

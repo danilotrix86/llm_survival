@@ -1,11 +1,12 @@
-
 from config import config
-from pydantic import BaseModel, ValidationError
+from pydantic import ValidationError
+import logging
+from validation.pydantic_val import NextAction
+
+# Initialize the logger
+logger = logging.getLogger(__name__)
 
 
-class ActionResponse(BaseModel):
-    action: str
-    reason: str
 
 class Decision:
     """
@@ -23,7 +24,7 @@ class Decision:
         """
         self.memory = memory
 
-        if (config.LLM_ENGINE == "openai"):
+        if config.LLM_ENGINE == "openai":
             from openai_wrapper.openai_class import OpenAIWrapper
             self.decision_wrapper = OpenAIWrapper(config.GPT_ENGINE)
 
@@ -39,7 +40,7 @@ class Decision:
         # Convert the entire memory to a string for the system message
         memory_string = self.memory.to_string()
 
-        if (config.LLM_ENGINE == "openai"):
+        if config.LLM_ENGINE == "openai":
             # Add the memory string as a system message
             self.decision_wrapper.add_message("system", memory_string)
 
@@ -50,19 +51,18 @@ class Decision:
                 response_content = response.choices[0].message.content
 
                 # Validate the response content with Pydantic
-                action_response = ActionResponse.model_validate_json(response_content)
-                
+                action_response = NextAction.model_validate_json(response_content)
+
                 # Return the validated JSON response
                 return action_response.model_dump_json()
 
             except ValidationError as e:
                 # Handle validation errors
-                print(f"Validation error: {e.json()}")
-                return '{"action": "", "reason": "Validation error"}'
+                logger.error(f"Validation error: {e.json()}")
+                return '{"action": "", "observation": "Validation error"}'
 
             except Exception as e:
                 # Log the error
-                print(f"Error fetching next action: {e}")
-                return '{"action": "", "reason": "Error fetching next action"}'
+                logger.error(f"Error fetching next action: {e}")
+                return '{"action": "", "observation": "Error fetching next action"}'
 
-        

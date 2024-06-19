@@ -3,7 +3,7 @@
     {
       "name": "shelter",
       "description": "The shelter will keep you warm and dry and allow you to sleep.",
-      "quantity": 1
+      "quantity": 2
     },
     {
       "name": "fish",
@@ -13,7 +13,7 @@
     {
       "name": "berry",
       "description": "It can be eaten for hunger.",
-      "quantity": 20
+      "quantity": 15
     },
     {
       "name": "water",
@@ -23,12 +23,12 @@
     {
       "name": "stick",
       "description": "It can be used to craft items",
-      "quantity": 10
+      "quantity": 8
     },
     {
       "name": "wood",
       "description": "It can be used to craft items",
-      "quantity": 0
+      "quantity": 7
     },
     {
       "name": "stone",
@@ -43,7 +43,7 @@
     {
       "name": "ax",
       "description": "It can be used to cut down trees and gather wood.",
-      "quantity": 0
+      "quantity": 1
     },
     {
       "name": "firecamp",

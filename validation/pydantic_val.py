@@ -1,7 +1,7 @@
-# validation/pydantic_val.py
-
-from pydantic import BaseModel
-from typing import Dict
+from pydantic import BaseModel, Field
+import json
+import json
+from langchain_core.agents import AgentActionMessageLog, AgentFinish
 
 class Inventory(BaseModel):
     food: int
@@ -21,7 +21,7 @@ class PlayerInfo(BaseModel):
     health: str
     hunger: str
     thirst: str
-    energy: str  
+    energy: str
 
 class ActionRequest(BaseModel):
     action: str
@@ -29,3 +29,12 @@ class ActionRequest(BaseModel):
     message: str
     inventory: Inventory
     player_info: PlayerInfo
+
+from typing import List
+from pydantic import BaseModel, Field
+
+class NextAction(BaseModel):
+    # Define the input data for the NextAction function
+    action: str 
+    observation: str
+    
