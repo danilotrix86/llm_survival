@@ -3,19 +3,13 @@ import json
 import json
 from langchain_core.agents import AgentActionMessageLog, AgentFinish
 
+
 class Inventory(BaseModel):
-    food: int
-    water: int
-    shelter: int
-    fish: int
-    berry: int
-    stick: int
-    wood: int
+    axe: int
+    fibers: int
     stone: int
-    fiber: int
-    ax: int
-    firecamp: int
-    raft: int
+    wood: int
+    stick: int
 
 class PlayerInfo(BaseModel):
     health: str
@@ -30,11 +24,8 @@ class ActionRequest(BaseModel):
     inventory: Inventory
     player_info: PlayerInfo
 
-from typing import List
-from pydantic import BaseModel, Field
 
 class NextAction(BaseModel):
-    # Define the input data for the NextAction function
     action: str 
     observation: str
     

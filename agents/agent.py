@@ -3,6 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
 from langchain.agents import tool, create_tool_calling_agent, AgentExecutor
 import logging
+from config import config
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -29,7 +30,7 @@ def read_book(book_name: str) -> str:
         return json.dumps({"error": str(e)})
 
 class SurvivalGameAgent:
-    def __init__(self, openai_api_key: str):
+    def __init__(self):
         """
         Initialize the SurvivalGameAgent with OpenAI API key and necessary configurations.
 
@@ -59,7 +60,7 @@ class SurvivalGameAgent:
                 MessagesPlaceholder(variable_name="agent_scratchpad"),
             ]
         )
-        self.llm = ChatOpenAI(model="gpt-4o", api_key=openai_api_key)
+        self.llm = ChatOpenAI(model=config.GPT_ENGINE)
         self.agent = None
         self.agent_executor = None
 

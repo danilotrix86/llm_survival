@@ -25,6 +25,10 @@
       "description": "Drink to restore thirst."
     },
     {
+      "name": "craft_rope",
+      "description": "Craft a rope used in crafting, you need 3 fibres"
+    },
+    {
       "name": "sleep",
       "description": "Sleep to restore energy."
     },
@@ -33,8 +37,8 @@
       "description": "Explore new areas in the map."
     },
     {
-      "name": "craft_ax",
-      "description": "Craft a Ax to cut wood. To craft, you need 2 sticks and 1 stone."
+      "name": "craft_axe",
+      "description": "Craft a Axe to cut wood. To craft, you need 2 sticks and 1 stone."
     },
     {
       "name": "craft_firecamp",

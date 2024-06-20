@@ -2,7 +2,7 @@ import logging
 from fastapi import FastAPI, Body
 from validation.pydantic_val import ActionRequest  # Importing Pydantic model for request validation
 from zeroshot.memory import Memory  # Importing Memory class
-from settings.utils import load_categories_from_json  # Utility function to load categories
+from settings.utils import load_categories_from_json, load_from_json
 from zeroshot.decisions import Decision  # Importing Decision class
 import json
 from config import config  # Configuration settings
@@ -57,17 +57,9 @@ def get_next_action(action_request: ActionRequest = Body(...)):
             return action, observation
 
         elif config.APPROACH == "AGENTIC":
-            from dotenv import load_dotenv
             from agents.agent import SurvivalGameAgent
-            import os
 
-            # Load environment variables from .env file
-            load_dotenv()
-
-            # Access the environment variables
-            api_key = os.getenv("API_KEY")
-
-            agent = SurvivalGameAgent(api_key)
+            agent = SurvivalGameAgent()
             agent.initialize_agent()
 
             # Input data for the agent
@@ -83,3 +75,12 @@ def get_next_action(action_request: ActionRequest = Body(...)):
         logger.error(f"Error processing request: {e}")
         return JSONResponse(status_code=500, content={"message": str(e)})
 
+
+@app.get("/messages/")
+def get_messages():
+    messages_file = "game_settings/messages.json"
+    try:
+        return load_from_json("messages", messages_file)
+    except Exception as e:
+        logger.error(f"Error processing request: {e}")
+        return JSONResponse(status_code=500, content={"message":str(e)})
