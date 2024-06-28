@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "name": "eat",
+            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+        },
+        {
+            "name": "eat",
+            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+        },
+        {
+            "name": "eat",
+            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+        },
+        {
+            "name": "eat",
+            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+        },
+        {
+            "name": "eat",
+            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+        },
+        {
+            "name": "eat",
+            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+        },
+        {
+            "name": "eat",
+            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+        },
+        {
+            "name": "eat",
+            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+        }
+    ]
+}

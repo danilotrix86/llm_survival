@@ -1,0 +1,24 @@
+{
+    "inventory": [
+        {
+            "name": "stick",
+            "description": "8"
+        },
+        {
+            "name": "wood",
+            "description": "7"
+        },
+        {
+            "name": "stone",
+            "description": "0"
+        },
+        {
+            "name": "fibers",
+            "description": "0"
+        },
+        {
+            "name": "axe",
+            "description": "12"
+        }
+    ]
+}

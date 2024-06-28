@@ -1,8 +1,0 @@
-{
-  "logs": [
-    {
-      "name": "drink",
-      "description": "The action 'drink' was executed with status 'success' and message: 'You drank some water from the river. It was refreshing'."
-    }
-  ]
-}
