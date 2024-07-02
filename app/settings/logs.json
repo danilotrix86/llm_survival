@@ -1,36 +1,36 @@
 {
     "logs": [
         {
-            "name": "eat",
-            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+            "name": "craft_raft",
+            "description": "The action 'craft_raft' was executed with status 'failed' and message: 'You wanted to craft a raft but you don't have enough materials. You need 20 woods, 20 sticks and 10 ropes'."
         },
         {
-            "name": "eat",
-            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+            "name": "craft_raft",
+            "description": "The action 'craft_raft' was executed with status 'failed' and message: 'You wanted to craft a raft but you don't have enough materials. You need 20 woods, 20 sticks and 10 ropes'."
         },
         {
-            "name": "eat",
-            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+            "name": "craft_raft",
+            "description": "The action 'craft_raft' was executed with status 'failed' and message: 'You wanted to craft a raft but you don't have enough materials. You need 20 woods, 20 sticks and 10 ropes'."
         },
         {
-            "name": "eat",
-            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+            "name": "craft_raft",
+            "description": "The action 'craft_raft' was executed with status 'failed' and message: 'You wanted to craft a raft but you don't have enough materials. You need 20 woods, 20 sticks and 10 ropes'."
         },
         {
-            "name": "eat",
-            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+            "name": "craft_raft",
+            "description": "The action 'craft_raft' was executed with status 'failed' and message: 'You wanted to craft a raft but you don't have enough materials. You need 20 woods, 20 sticks and 10 ropes'."
         },
         {
-            "name": "eat",
-            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+            "name": "craft_raft",
+            "description": "The action 'craft_raft' was executed with status 'failed' and message: 'You wanted to craft a raft but you don't have enough materials. You need 20 woods, 20 sticks and 10 ropes'."
         },
         {
-            "name": "eat",
-            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+            "name": "craft_raft",
+            "description": "The action 'craft_raft' was executed with status 'failed' and message: 'You wanted to craft a raft but you don't have enough materials. You need 20 woods, 20 sticks and 10 ropes'."
         },
         {
-            "name": "eat",
-            "description": "The action 'eat' was executed with status 'success' and message: 'You ate some berry from the tree. It was good'."
+            "name": "craft_raft",
+            "description": "The action 'craft_raft' was executed with status 'failed' and message: 'You wanted to craft a raft but you don't have enough materials. You need 20 woods, 20 sticks and 10 ropes'."
         }
     ]
 }

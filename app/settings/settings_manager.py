@@ -186,8 +186,14 @@ class SettingsManager:
             record_data = record_content["data"]
             result += f"{record_name.capitalize()} ({record_description}):\n"
             items = record_data.get(record_name, [])
-            for item in items:
-                result += f"{item['name']}: {item['description']}\n"
+            
+            if record_name == 'inventory':
+                for item in items:
+                    result += f"{item['name']}: {item['description']} (You own {item['quantity']} {item['name']})\n"
+            else:
+                for item in items:
+                    result += f"{item['name']}: {item['description']}\n"
+            
             result += "\n"
         return result.strip()
 
@@ -235,10 +241,14 @@ class SettingsManager:
             full_log = f"The action '{action}' was executed with status '{status}' and message: '{message}'."
             self.add_item('logs', {"name": action, "description": full_log})
 
-            logger.info(f"Inventory: {inventory}")
             # Update inventory
-            for item_name, item_quantity in inventory.items():
-                self.edit_item('inventory', item_name, {"name": item_name, "description": str(item_quantity)})
+            current_inventory = self.load_record('inventory')['inventory']
+            for item in current_inventory:
+                if item['name'] in inventory:
+                    item['quantity'] = inventory[item['name']]
+            
+            self.records['inventory']['data']['inventory'] = current_inventory
+            self.save_record('inventory')
 
         except AttributeError as e:
             logger.error(f"Attribute error: {e}")

@@ -1,11 +1,38 @@
 [
-    {"name": "instructions", "description": "these are the instructions for the main character behaviour"},
-    {"name": "actions", "description": "these are the list of possible actions that the character can play"},
-    {"name": "logs", "description": "these are the logs of previous actions executed by the character"},
-    {"name": "game_info", "description": "this is the game information"},
-    {"name": "player_info", "description": "these are the player variables. Options are Very Bad, Bad, Normal, Good, Very Good. Bad means you need to improve, Good means you are doing well."},
-    {"name": "inventory", "description": "these are the items in the player's inventory"},
-    {"name": "warnings", "description": "these are warnings for the character to pay attention to"},
-    {"name": "current_plan", "description":"This is the current plan of action"},
-    {"name": "objectives", "description": "these are the main game objectives"}
-]
+    {
+      "name": "instructions",
+      "description": "Detailed guidelines for the main character's behavior, personality, and decision-making process in the game"
+    },
+    {
+      "name": "actions",
+      "description": "Comprehensive list of all available actions the character can perform, including their effects and any prerequisites"
+    },
+    {
+      "name": "logs",
+      "description": "Chronological record of all previous actions executed by the character, including timestamps and outcomes"
+    },
+    {
+      "name": "game_info",
+      "description": "Essential information about the game world, including current location, time, and any relevant environmental factors"
+    },
+    {
+      "name": "player_info",
+      "description": "Key player statistics and attributes, rated on a scale of Very Bad, Bad, Normal, Good, or Very Good. 'Bad' indicates need for improvement, while 'Good' signifies satisfactory performance"
+    },
+    {
+      "name": "inventory",
+      "description": "Detailed list of items currently in the player's possession, including quantities and any special properties"
+    },
+    {
+      "name": "warnings",
+      "description": "Critical alerts or cautions that the character should be aware of, potentially affecting decision-making or gameplay"
+    },
+    {
+      "name": "current_plan",
+      "description": "Outline of the character's current strategy or sequence of intended actions to achieve immediate goals"
+    },
+    {
+      "name": "objectives",
+      "description": "List of primary and secondary goals the player must accomplish to progress in the game, including any time constraints or special conditions"
+    }
+  ]

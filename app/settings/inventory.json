@@ -2,23 +2,28 @@
     "inventory": [
         {
             "name": "stick",
-            "description": "8"
+            "description": "sticks are used to craft other items",
+            "quantity": 3
         },
         {
             "name": "wood",
-            "description": "7"
+            "description": "wood is used to craft other items",
+            "quantity": 5
         },
         {
             "name": "stone",
-            "description": "0"
+            "description": "stones are used to craft other items",
+            "quantity": 100
         },
         {
             "name": "fibers",
-            "description": "0"
+            "description": "fibers are used to craft other items",
+            "quantity": 2
         },
         {
             "name": "axe",
-            "description": "12"
+            "description": "axes are used to chop down trees",
+            "quantity": 5
         }
     ]
 }

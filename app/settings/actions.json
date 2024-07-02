@@ -55,6 +55,10 @@
         {
             "name": "build_shelter",
             "description": "Build a shelter to keep your energy level up. You need 4 woods, 2 sticks and 2 fibers"
+        },
+        {
+            "name": "craft_raft",
+            "description": "Build a raft to leave the remote island. You need 20 woods, 20 sticks and 10 ropes"
         }
     ]
 }

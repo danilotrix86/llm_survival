@@ -1,3 +1,8 @@
 {
-  "warnings": []
+  "warnings": [
+    {
+      "name": "You keep building axes",
+      "description": "You have already built 5 axes but you still want to build more. Stop it."
+    }
+  ]
 }

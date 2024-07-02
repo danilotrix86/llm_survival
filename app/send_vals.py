@@ -4,15 +4,15 @@ url = "http://127.0.0.1:8000/next_action/"
 
 # Define the payload as a dictionary
 payload = {
-    "action": "eat",
-    "status": "success",
-    "message": "You ate some berry from the tree. It was good",
+    "action": "craft_raft",
+    "status": "failed",
+    "message": "You wanted to craft a raft but you don't have enough materials. You need 20 woods, 20 sticks and 10 ropes",
     "inventory": {
-        "axe": 12,
-        "stick": 8,
-        "wood": 7,
-        "stone": 0,
-        "fibers": 0,
+        "axe": 5,
+        "stick": 3,
+        "wood": 5,
+        "stone": 100,
+        "fibers": 2,
         
     },
     "player_info": {
