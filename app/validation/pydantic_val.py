@@ -6,6 +6,8 @@ class Inventory(BaseModel):
     stone: int
     wood: int
     stick: int
+    berry: int
+    fish: int
 
 class PlayerInfo(BaseModel):
     health: str

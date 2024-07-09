@@ -1,8 +1,3 @@
 {
-  "objectives": [
-    {
-      "name": "build shelter",
-      "description": "Build a shelter to keep your energy level"
-    }
-  ]
+  "objectives": []
 }

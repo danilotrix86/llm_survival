@@ -1,8 +1,8 @@
 {
   "warnings": [
     {
-      "name": "You keep building axes",
-      "description": "You have already built 5 axes but you still want to build more. Stop it."
+      "name": "pick_sticks",
+      "description": "warning: you are only picking sticks. try to do something else"
     }
   ]
 }

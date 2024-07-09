@@ -53,8 +53,12 @@
             "description": "Craft a firecamp to decrease stress saying next to it. You need 2 sticks and 4 stones"
         },
         {
+            "name": "craft_fishrod",
+            "description": "Craft a fishing rod to fish with. You need 1 stick and 1 fiber and 1 rope"
+        },
+        {
             "name": "build_shelter",
-            "description": "Build a shelter to keep your energy level up. You need 4 woods, 2 sticks and 2 fibers"
+            "description": "Build a shelter to keep your energy level up. You need 4 woods, 2 sticks and 1 rope"
         },
         {
             "name": "craft_raft",

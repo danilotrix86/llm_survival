@@ -7,12 +7,18 @@
 		"ErrorNoObject": "No {0} found",
 		"ErrorTool": "You require a {1} for that",
 		"ErrorCantAttack": "That object cannot be attacked",
+                "ErrorHarvestUnready": "{0} has not grown yet",
 
 		"drink.Success":     "Drank some water",
 		"grass.cut.Success": "Cut down some grass",
 		"interact.Success": "Interacted with {0}",
 		"collect.Success": "Collected {0}",
-        "pick.Success": "Picked up {0}",
+        	"pick.Success": "Picked up {0}",
+                "fish.Success": "You caught a fish!",
+		"build.Success": "You built {0}",
+
+		"build.ErrorMissingItems": "Cannot build {0}, missing: {1}",
+		"build.ErrorNoLocation": "Cannot build {0}, no suitable location found",
 
 		"craft.ErrorMissingItems": "Cannot craft {0}, missing: {1}",
 		"craft.Success": "Crafted {0}",
