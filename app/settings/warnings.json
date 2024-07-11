@@ -1,8 +1,3 @@
 {
-  "warnings": [
-    {
-      "name": "pick_sticks",
-      "description": "warning: you are only picking sticks. try to do something else"
-    }
-  ]
+    "warnings": []
 }

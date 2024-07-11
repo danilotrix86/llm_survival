@@ -256,3 +256,25 @@ class SettingsManager:
         except Exception as e:
             logger.error(f"Unexpected error: {e}")
             raise
+
+    def reset_inventory_quantities(self):
+        """
+        Reset the quantities of all items in the inventory to 0.
+        """
+        if 'inventory' in self.records:
+            for item in self.records['inventory']['data']['inventory']:
+                item['quantity'] = 0
+            self.save_record('inventory')
+        else:
+            raise ValueError("Record 'inventory' not found.")
+        
+    def set_player_info_to_very_good(self):
+        """
+        Set the description of all items in player_info to 'Very good'.
+        """
+        if 'player_info' in self.records:
+            for item in self.records['player_info']['data']['player_info']:
+                item['description'] = "Very good"
+            self.save_record('player_info')
+        else:
+            raise ValueError("Record 'player_info' not found.")

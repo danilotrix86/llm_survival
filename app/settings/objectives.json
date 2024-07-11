@@ -1,3 +1,8 @@
 {
-  "objectives": []
+    "objectives": [
+        {
+            "name": "Build Shelter",
+            "description": "Build a shelter to protect yourself from the elements, have fire and a place to sleep."
+        }
+    ]
 }

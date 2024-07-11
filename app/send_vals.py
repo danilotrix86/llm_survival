@@ -1,6 +1,6 @@
 import requests
 
-url = "http://127.0.0.1:8000/next_action/"
+url = "http://127.0.0.1:8000/start_new_game/"
 
 # Define the payload as a dictionary
 payload = {
@@ -24,7 +24,7 @@ payload = {
 }
 
 # Send the POST request with JSON payload
-response = requests.post(url, json=payload)
+response = requests.post(url)
 
 # Print the response from the server
 print(response.status_code)

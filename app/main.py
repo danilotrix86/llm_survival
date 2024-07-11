@@ -1,5 +1,5 @@
 import logging
-from fastapi import FastAPI, Body
+from fastapi import FastAPI, Body, HTTPException
 from app.validation.pydantic_val import ActionRequest  # Pydantic models for request and response
 from app import config  # Configuration settings
 from fastapi.responses import JSONResponse  # JSON response for error handling
@@ -86,7 +86,6 @@ def get_next_action(action_request: ActionRequest = Body(...)):
             "input": "Return only a JSON object with the next action and observation (no other information added). The action should be only 1 of the actions in the actions book. You can't use other actions",
             "chat_history": []
         }
-
         try:
             action, observation = agent.execute_agent(input_data)
             logger.info (f"Action: {action}, Observation: {observation}")
@@ -101,3 +100,48 @@ def get_next_action(action_request: ActionRequest = Body(...)):
                     "error": str(e)
                 }
             )
+
+@app.post("/start_new_game/")
+def start_new_game():
+    """
+    Endpoint to start a new game.
+
+    Returns:
+    - message: The message to be displayed to the user
+    """
+
+    settings_manager = SettingsManager(settings_dir="app/settings")
+
+    try:
+        # Clear the logs, current_plan, warnings and game_info
+        settings_manager.reset_record("logs")
+        settings_manager.reset_record("current_plan")
+        settings_manager.reset_record("warnings")
+        settings_manager.reset_record("game_info")
+        settings_manager.reset_record("objectives")
+
+
+        # Reset the inventory quantities
+        settings_manager.reset_inventory_quantities()
+
+        # Reset the player info
+        settings_manager.set_player_info_to_very_good()
+
+        # Add the first objective
+        first_objective = {
+            "name": "Build Shelter",
+            "description": "Build a shelter to protect yourself from the elements, have fire and a place to sleep."
+        }
+        settings_manager.add_item('objectives', first_objective)
+
+        return {"message": "New game started successfully"}
+    
+    except ValueError as e:
+        logger.error(f"ValueError: {e}")
+        raise HTTPException(status_code=400, detail=str(e))
+    except RuntimeError as e:
+        logger.error(f"RuntimeError: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+    except Exception as e:
+        logger.error(f"Unexpected error: {e}")
+        raise HTTPException(status_code=500, detail="An unexpected error occurred")
