@@ -1,3 +1,36 @@
 {
-    "logs": []
+    "logs": [
+        {
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+        },
+        {
+            "name": "cut_wood",
+            "description": "The action 'cut_wood' was executed with status 'success' and message: 'Cut down tree'."
+        },
+        {
+            "name": "craft_rope",
+            "description": "The action 'craft_rope' was executed with status 'success' and message: 'Crafted Rope'."
+        },
+        {
+            "name": "craft_firecamp",
+            "description": "The action 'craft_firecamp' was executed with status 'error' and message: 'The target of the command was invalid.'."
+        },
+        {
+            "name": "craft_firecamp",
+            "description": "The action 'craft_firecamp' was executed with status 'error' and message: 'The target of the command was invalid.'."
+        },
+        {
+            "name": "pick_fibers",
+            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'Picked up Fibers'."
+        },
+        {
+            "name": "craft_firecamp",
+            "description": "The action 'craft_firecamp' was executed with status 'error' and message: 'The target of the command was invalid.'."
+        },
+        {
+            "name": "build_shelter",
+            "description": "The action 'build_shelter' was executed with status 'success' and message: ''."
+        }
+    ]
 }

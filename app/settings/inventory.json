@@ -13,17 +13,17 @@
         {
             "name": "stone",
             "description": "stones are used to craft other items",
-            "quantity": 0
+            "quantity": 2
         },
         {
             "name": "fibers",
             "description": "fibers are used to craft other items",
-            "quantity": 0
+            "quantity": 3
         },
         {
             "name": "axe",
             "description": "axes are used to chop down trees",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "berry",

@@ -8,6 +8,10 @@ class Inventory(BaseModel):
     stick: int
     berry: int
     fish: int
+    rope: int
+    firecamp: int
+    shelter: int
+    fishrod: int
 
 class PlayerInfo(BaseModel):
     health: str

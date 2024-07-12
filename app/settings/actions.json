@@ -49,8 +49,8 @@
             "description": "Craft a Axe to cut wood. To craft, you need 2 sticks and 1 stone."
         },
         {
-            "name": "craft_firecamp",
-            "description": "Craft a firecamp to decrease stress saying next to it. You need 2 sticks and 4 stones"
+            "name": "build_firepit",
+            "description": "Build a firecamp to decrease stress saying next to it. You need 2 sticks and 4 stones"
         },
         {
             "name": "craft_fishrod",

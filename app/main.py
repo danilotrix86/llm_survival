@@ -50,18 +50,18 @@ def get_next_action(action_request: ActionRequest = Body(...)):
     if config.APPROACH == "ZEROSHOT":
 
         memory = settings_manager.all_records_to_string()
-        logger.info(f"Memory tokens: {settings_manager.num_tokens(memory)}")
+        logger.info(f"Memory tokens: {settings_manager.num_tokens(memory)}\n\n")
 
         try:
             # Get the next action from Decision class
             decisions = Decision(memory)
             next_action = decisions.get_next_action()
-            logger.info(f"Next action: {next_action}")
+            #logger.info(f"Next action: {next_action}")
             # Parse the next action JSON string into a dictionary
             next_action_dict = json.loads(next_action)
             action = next_action_dict.get("action")
             observation = next_action_dict.get("observation")
-            logger.info (f"Action: {action}, Observation: {observation}")
+            logger.info (f"\n\n============= Action: {action}, Observation: {observation} ============= \n\n")
             return action, observation
         
         except Exception as e:

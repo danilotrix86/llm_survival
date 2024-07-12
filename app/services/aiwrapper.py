@@ -37,7 +37,7 @@ class AIWrapper(ABC):
             **kwargs
         }
 
-        logging.info(f"Calling completion with params: {api_params}")
+        #logging.info(f"Calling completion with params: {api_params}")
         
         if response_format == "json":
             api_params["response_format"] = {"type": "json_object"}
