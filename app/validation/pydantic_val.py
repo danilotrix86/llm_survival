@@ -9,7 +9,7 @@ class Inventory(BaseModel):
     berry: int
     fish: int
     rope: int
-    firecamp: int
+    firepit: int
     shelter: int
     fishrod: int
 
