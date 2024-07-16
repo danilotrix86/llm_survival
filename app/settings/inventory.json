@@ -3,12 +3,12 @@
         {
             "name": "stick",
             "description": "sticks are used to craft other items",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "wood",
             "description": "wood is used to craft other items",
-            "quantity": 4
+            "quantity": 5
         },
         {
             "name": "stone",
@@ -18,7 +18,7 @@
         {
             "name": "fibers",
             "description": "fibers are used to craft other items",
-            "quantity": 4
+            "quantity": 5
         },
         {
             "name": "axe",
@@ -33,7 +33,7 @@
         {
             "name": "fish",
             "description": "It can be eaten for hunger.",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "rope",
@@ -48,7 +48,7 @@
         {
             "name": "shelter",
             "description": "shelter is used to sleep",
-            "quantity": 2
+            "quantity": 1
         },
         {
             "name": "fishrod",

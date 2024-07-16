@@ -61,7 +61,7 @@ def get_next_action(action_request: ActionRequest = Body(...)):
             next_action_dict = json.loads(next_action)
             action = next_action_dict.get("action")
             observation = next_action_dict.get("observation")
-            logger.info (f"\n\n============= Action: {action}, Observation: {observation} ============= \n\n")
+            logger.info (f"\n\n============= ACTION: {action}\n OBSERVATION: {observation}\n ============= \n\n")
             return action, observation
         
         except Exception as e:

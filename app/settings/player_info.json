@@ -6,11 +6,11 @@
         },
         {
             "name": "thirst",
-            "description": "Normal"
+            "description": "Good"
         },
         {
             "name": "hunger",
-            "description": "Good"
+            "description": "Very good"
         },
         {
             "name": "energy",
