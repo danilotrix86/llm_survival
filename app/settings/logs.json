@@ -1,3 +1,16 @@
 {
-    "logs": []
+    "logs": [
+        {
+            "name": "explore",
+            "description": "The action 'explore' was executed with status 'success' and message: 'Explored Nature. There is nature around you'."
+        },
+        {
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+        },
+        {
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+        }
+    ]
 }

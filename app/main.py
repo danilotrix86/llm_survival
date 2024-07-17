@@ -15,6 +15,8 @@ logger = logging.getLogger(__name__)
 # Initialize FastAPI app
 app = FastAPI()
 
+total_tokens = 0
+
 @app.get("/messages/")
 def get_messages():
     messages_file = "game_settings/messages.json"
@@ -38,6 +40,8 @@ def get_next_action(action_request: ActionRequest = Body(...)):
     - observation: The observation related to the action
     """
 
+    global total_tokens  # Declare the use of the global variable
+    
     # Log the received request data
     logger.info(f"Received request: {action_request}")
 
@@ -50,7 +54,8 @@ def get_next_action(action_request: ActionRequest = Body(...)):
     if config.APPROACH == "ZEROSHOT":
 
         memory = settings_manager.all_records_to_string()
-        logger.info(f"Memory tokens: {settings_manager.num_tokens(memory)}\n\n")
+        total_tokens = total_tokens + settings_manager.num_tokens(memory)
+        logger.info (f"\n\n============= TOKENS: {settings_manager.num_tokens(memory)}\n TOTAL TOKENS: {total_tokens}\n ============= \n\n")
 
         try:
             # Get the next action from Decision class
