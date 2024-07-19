@@ -15,6 +15,7 @@ logger = logging.getLogger(__name__)
 # Initialize FastAPI app
 app = FastAPI()
 
+# Global variable to store the total tokens consumed
 total_tokens = 0
 
 @app.get("/messages/")
@@ -46,16 +47,18 @@ def get_next_action(action_request: ActionRequest = Body(...)):
     logger.info(f"Received request: {action_request}")
 
     settings_manager = SettingsManager(settings_dir="app/settings")
+    
+    # check and update the objectives
+    objectives = settings_manager.updateObjectives(action_request.inventory)
 
     # Update memory with the received action request
-    settings_manager.update_memory(action_request)
+    message = settings_manager.update_memory(action_request)
 
     # Process based on the configured approach
     if config.APPROACH == "ZEROSHOT":
 
         memory = settings_manager.all_records_to_string()
         total_tokens = total_tokens + settings_manager.num_tokens(memory)
-        logger.info (f"\n\n============= TOKENS: {settings_manager.num_tokens(memory)}\n TOTAL TOKENS: {total_tokens}\n ============= \n\n")
 
         try:
             # Get the next action from Decision class
@@ -66,7 +69,7 @@ def get_next_action(action_request: ActionRequest = Body(...)):
             next_action_dict = json.loads(next_action)
             action = next_action_dict.get("action")
             observation = next_action_dict.get("observation")
-            logger.info (f"\n\n============= ACTION: {action}\n OBSERVATION: {observation}\n ============= \n\n")
+            logger.info (f"\n\n============= \nTOKENS: {settings_manager.num_tokens(memory)}\nTOTAL TOKENS: {total_tokens}\n=============\nACTION: {action}\nOBSERVATION: {observation}\n=============\nMESSAGE: {message}\n=============\n")
             return action, observation
         
         except Exception as e:

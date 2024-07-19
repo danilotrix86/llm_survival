@@ -14,11 +14,11 @@
         },
         {
             "name": "cut_wood",
-            "description": "Cut wood to build items. Ax is needed."
+            "description": "Cut wood to build items. Axe is needed."
         },
         {
             "name": "eat",
-            "description": "Eat to restore health."
+            "description": "Eat to restore health. You can eat berries or fish."
         },
         {
             "name": "pick_berries",
@@ -46,15 +46,27 @@
         },
         {
             "name": "craft_axe",
-            "description": "Craft a Axe to cut wood. To craft, you need 2 sticks and 1 stone."
+            "description": "Craft a Axe to cut wood. To craft, you need 3 sticks and 1 stone."
+        },
+        {
+            "name": "craft_pickaxe",
+            "description": "Craft a pickaxe to mine iron and gold. To craft, you need 1 wood 1 stone."
+        },
+        {
+            "name": "craft_compass",
+            "description": "Craft a compass needed to navigate with the raft. You need 2 gold 3 iron"
+        },
+        {
+            "name": "build_raft",
+            "description": "Build a raft to leave the remote island. You need 20 woods, 20 sticks, 5 ropes, 1 sail and 1 compass"
         },
         {
             "name": "build_firepit",
-            "description": "Build a firecamp to decrease stress saying next to it. You need 2 sticks and 4 stones"
+            "description": "Build a firecamp to decrease stress staying next to it. You need 4 sticks and 6 stones"
         },
         {
             "name": "craft_fishrod",
-            "description": "Craft a fishing rod to fish with. You need 1 stick and 1 fiber and 1 rope"
+            "description": "Craft a fishing rod to fish with. You need 3 sticks and 2 ropes"
         },
         {
             "name": "build_shelter",
@@ -62,7 +74,7 @@
         },
         {
             "name": "craft_raft",
-            "description": "Build a raft to leave the remote island. You need 20 woods, 20 sticks and 10 ropes"
+            "description": "Build a raft to leave the remote island. You need 20 woods, 20 sticks, 5 ropes, 1 sail and 1 compass"
         }
     ]
 }

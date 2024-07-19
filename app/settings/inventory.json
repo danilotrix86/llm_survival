@@ -3,7 +3,7 @@
         {
             "name": "stick",
             "description": "sticks are used to craft other items",
-            "quantity": 2
+            "quantity": 0
         },
         {
             "name": "wood",
@@ -23,6 +23,11 @@
         {
             "name": "axe",
             "description": "axes are used to chop down trees",
+            "quantity": 0
+        },
+        {
+            "name": "pickaxe",
+            "description": "pickaxe is used to mine iron and gold",
             "quantity": 0
         },
         {
@@ -53,6 +58,21 @@
         {
             "name": "fishrod",
             "description": "fishrod is used to fish",
+            "quantity": 0
+        },
+        {
+            "name": "iron",
+            "description": "iron is used to craft the compass",
+            "quantity": 0
+        },
+        {
+            "name": "gold",
+            "description": "gold is used to craft the compass",
+            "quantity": 0
+        },
+        {
+            "name": "compass",
+            "description": "raft is used to leave the remote island",
             "quantity": 0
         }
     ]

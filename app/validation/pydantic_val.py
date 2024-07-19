@@ -12,6 +12,10 @@ class Inventory(BaseModel):
     firepit: int
     shelter: int
     fishrod: int
+    iron: int
+    gold: int
+    compass: int
+    pickaxe: int
 
 class PlayerInfo(BaseModel):
     health: str

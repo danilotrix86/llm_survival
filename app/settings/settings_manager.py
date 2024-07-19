@@ -250,6 +250,8 @@ class SettingsManager:
             self.records['inventory']['data']['inventory'] = current_inventory
             self.save_record('inventory')
 
+            return message
+        
         except AttributeError as e:
             logger.error(f"Attribute error: {e}")
             raise
@@ -278,3 +280,13 @@ class SettingsManager:
             self.save_record('player_info')
         else:
             raise ValueError("Record 'player_info' not found.")
+        
+
+    def updateObjectives(self, inventory):
+        
+        if (inventory.shelter > 0 ):
+            self.reset_record("objectives")
+            self.add_item('objectives', {
+                "name": "Build Firepit",
+                "description": "Build a firepit to cook food and keep warm."
+            })
