@@ -20,7 +20,7 @@ total_tokens = 0
 
 @app.get("/messages/")
 def get_messages():
-    messages_file = "game_settings/messages.json"
+    messages_file = "app/game_settings/messages.json"
     try:
         return load_from_json("messages", messages_file)
     except Exception as e:
