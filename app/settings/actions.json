@@ -46,7 +46,7 @@
         },
         {
             "name": "craft_axe",
-            "description": "Craft a Axe to cut wood. To craft, you need 3 sticks and 1 stone."
+            "description": "Craft a Axe to cut wood. To craft, you need 2 sticks and 1 stone."
         },
         {
             "name": "craft_pickaxe",

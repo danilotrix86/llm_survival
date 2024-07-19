@@ -3,7 +3,7 @@
         {
             "name": "stick",
             "description": "sticks are used to craft other items",
-            "quantity": 0
+            "quantity": 2
         },
         {
             "name": "wood",
@@ -18,7 +18,7 @@
         {
             "name": "fibers",
             "description": "fibers are used to craft other items",
-            "quantity": 0
+            "quantity": 12
         },
         {
             "name": "axe",
