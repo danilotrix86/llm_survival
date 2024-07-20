@@ -73,8 +73,16 @@
             "description": "Build a shelter to keep your energy level up. You need 4 woods, 2 sticks and 1 rope"
         },
         {
-            "name": "craft_raft",
+            "name": "build_raft",
             "description": "Build a raft to leave the remote island. You need 20 woods, 20 sticks, 5 ropes, 1 sail and 1 compass"
+        },
+        {
+            "name": "mine_gold",
+            "description": "Mine gold, used to craft a compass"
+        },
+        {
+            "name": "mine_iron",
+            "description": "Mine iron, used to craft a compass"
         }
     ]
 }
