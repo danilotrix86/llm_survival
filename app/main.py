@@ -22,7 +22,10 @@ total_tokens = 0
 def get_messages():
     messages_file = "app/game_settings/messages.json"
     try:
-        return load_from_json("messages", messages_file)
+        loadjson = load_from_json("messages", messages_file)
+        if loadjson:
+            logger.info(f"Messages loaded successfully")
+            return loadjson
     except Exception as e:
         logger.error(f"Error processing request: {e}")
         return JSONResponse(status_code=500, content={"message":str(e)})
