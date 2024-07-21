@@ -53,12 +53,16 @@
             "description": "Craft a pickaxe to mine iron and gold. To craft, you need 1 wood 1 stone."
         },
         {
-            "name": "craft_compass",
-            "description": "Craft a compass needed to navigate with the raft. You need 2 gold 3 iron"
+            "name": "mine_gold",
+            "description": "Mine gold, used to craft a compass"
         },
         {
-            "name": "build_raft",
-            "description": "Build a raft to leave the remote island. You need 20 woods, 20 sticks, 5 ropes, 1 sail and 1 compass"
+            "name": "mine_iron",
+            "description": "Mine iron, used to craft a compass"
+        },
+        {
+            "name": "craft_compass",
+            "description": "Craft a compass needed to navigate with the raft. You need 2 gold 3 iron"
         },
         {
             "name": "build_firepit",
