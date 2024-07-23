@@ -22,11 +22,11 @@
         },
         {
             "name": "pick_berries",
-            "description": "Pick up berries to store."
+            "description": "Pick up berries to store for consumption."
         },
         {
             "name": "fish",
-            "description": "Go fishing to catch fish."
+            "description": "Go fishing to catch fish and store for consumption."
         },
         {
             "name": "drink",
