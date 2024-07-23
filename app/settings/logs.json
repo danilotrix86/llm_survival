@@ -1,16 +1,8 @@
 {
     "logs": [
         {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
-        },
-        {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
-        },
-        {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+            "name": "explore",
+            "description": "The action 'explore' was executed with status 'success' and message: 'Explored Nature. There is nature around you'."
         },
         {
             "name": "pick_sticks",
@@ -23,14 +15,6 @@
         {
             "name": "pick_wood",
             "description": "The action 'pick_wood' was executed with status 'error' and message: 'The target of the command was invalid.'."
-        },
-        {
-            "name": "pick_wood",
-            "description": "The action 'pick_wood' was executed with status 'error' and message: 'The target of the command was invalid.'."
-        },
-        {
-            "name": "pick_fibers",
-            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'Picked up Fibers'."
         }
     ]
 }

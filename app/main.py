@@ -156,3 +156,13 @@ def start_new_game():
     except Exception as e:
         logger.error(f"Unexpected error: {e}")
         raise HTTPException(status_code=500, detail="An unexpected error occurred")
+
+
+@app.get("/xp/")
+def get_messages():
+    messages_file = "app/game_settings/xp.json"
+    try:
+        return load_from_json("xp", messages_file)
+    except Exception as e:
+        logger.error(f"Error processing request: {e}")
+        return JSONResponse(status_code=500, content={"message":str(e)})
