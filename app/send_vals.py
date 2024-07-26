@@ -19,7 +19,7 @@ payload = {
         "health": "Very Good",
         "hunger": "Very Good",
         "thirst": "Very Good",
-        "energy": "Very Good"
+        "stress": "Very Good"
     }
 }
 

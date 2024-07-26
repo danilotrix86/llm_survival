@@ -16,12 +16,13 @@ class Inventory(BaseModel):
     gold: int
     compass: int
     pickaxe: int
+    torch: int
 
 class PlayerInfo(BaseModel):
     health: str
     hunger: str
     thirst: str
-    energy: str
+    stress: str
 
 class ActionRequest(BaseModel):
     action: str

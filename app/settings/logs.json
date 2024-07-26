@@ -1,36 +1,32 @@
 {
     "logs": [
         {
-            "name": "pick_berries",
-            "description": "The action 'pick_berries' was executed with status 'success' and message: 'Picked up GroupBerry'."
-        },
-        {
-            "name": "drink",
-            "description": "The action 'drink' was executed with status 'success' and message: 'Drank some water'."
-        },
-        {
-            "name": "eat",
-            "description": "The action 'eat' was executed with status 'success' and message: 'Ate Berries'."
-        },
-        {
             "name": "explore",
-            "description": "The action 'explore' was executed with status 'success' and message: 'Explored Desert. There is barren terrain around you'."
+            "description": "The action 'explore' was executed with status 'success' and message: 'Explored Nature. There is nature around you'."
         },
         {
-            "name": "pick_berries",
-            "description": "The action 'pick_berries' was executed with status 'success' and message: 'Picked up GroupBerry'."
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
         },
         {
-            "name": "fish",
-            "description": "The action 'fish' was executed with status 'error' and message: 'You require a Fishing Rod for that'."
+            "name": "pick_stones",
+            "description": "The action 'pick_stones' was executed with status 'success' and message: 'Picked up Stone'."
         },
         {
-            "name": "pick_berries",
-            "description": "The action 'pick_berries' was executed with status 'success' and message: 'Picked up GroupBerry'."
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
         },
         {
-            "name": "build_firepit",
-            "description": "The action 'build_firepit' was executed with status 'success' and message: 'You built Firepit'."
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+        },
+        {
+            "name": "pick_fibers",
+            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'Picked up Fibers'."
+        },
+        {
+            "name": "pick_fibers",
+            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'Picked up Fibers'."
         }
     ]
 }

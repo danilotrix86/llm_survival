@@ -2,19 +2,19 @@
     "actions": [
         {
             "name": "pick_sticks",
-            "description": "Pick up sticks to build items."
+            "description": "Pick up sticks to craft items."
         },
         {
             "name": "pick_stones",
-            "description": "Pick up stones to build items."
+            "description": "Pick up stones to craft items."
         },
         {
             "name": "pick_fibers",
-            "description": "Pick up fibers to build items."
+            "description": "Pick up fibers to craft items."
         },
         {
             "name": "cut_wood",
-            "description": "Cut wood to build items. Axe is needed."
+            "description": "Cut wood to craft items. Axe is needed."
         },
         {
             "name": "eat",
@@ -22,7 +22,7 @@
         },
         {
             "name": "pick_berries",
-            "description": "Pick up berries to store for consumption."
+            "description": "Pick up berries to store for consumption. Berries can be eaten for hunger."
         },
         {
             "name": "fish",
@@ -34,23 +34,23 @@
         },
         {
             "name": "craft_rope",
-            "description": "Craft a rope used in crafting, you need 3 fibres"
+            "description": "Craft a rope to craft other items, you need 3 fibres"
         },
         {
             "name": "sleep",
-            "description": "Sleep to restore energy."
+            "description": "Sleep to restore health."
         },
         {
             "name": "explore",
-            "description": "Explore new areas in the map."
+            "description": "Explore new areas on the map."
         },
         {
             "name": "craft_axe",
-            "description": "Craft a Axe to cut wood. To craft, you need 2 sticks and 1 stone."
+            "description": "Craft a Axe to cut wood. To craft a axe you need 2 sticks and 1 stone."
         },
         {
             "name": "craft_pickaxe",
-            "description": "Craft a pickaxe to mine iron and gold. To craft, you need 1 wood 1 stone."
+            "description": "Craft a pickaxe to mine iron and gold. To craft a pickaxe you need 1 wood 1 stone."
         },
         {
             "name": "mine_gold",
@@ -66,7 +66,7 @@
         },
         {
             "name": "build_firepit",
-            "description": "Build a firecamp to decrease stress staying next to it. You need 4 sticks and 6 stones"
+            "description": "Build a firecamp to decrease stress. You need 4 sticks and 6 stones"
         },
         {
             "name": "craft_fishrod",
@@ -74,7 +74,7 @@
         },
         {
             "name": "build_shelter",
-            "description": "Build a shelter to keep your energy level up. You need 4 woods, 2 sticks and 1 rope"
+            "description": "Build a shelter to keep your health level up. You need 4 woods, 2 sticks and 1 rope"
         },
         {
             "name": "build_raft",

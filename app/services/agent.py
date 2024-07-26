@@ -43,12 +43,12 @@ class SurvivalGameAgent:
         self.prompt = ChatPromptTemplate.from_messages(
             [
                 ("system", '''
-                    You are a character in a video game on a tropical island. Your goal is to survive by maintaining hunger, thirst, energy, and health levels and escape the island.
+                    You are a character in a video game on a tropical island. Your goal is to survive by maintaining hunger, thirst, stress, and health levels and escape the island.
 
                     You have access to books that contain information about:
 
                     - actions: the list of actions you can perform
-                    - player_info: your current stats (hunger, thirst, energy, health)
+                    - player_info: your current stats (hunger, thirst, stress, health)
                     - game_info: the current state of the game
                     - inventory: the items you have
                     - logs: the actions you have performed
