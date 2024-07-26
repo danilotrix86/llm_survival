@@ -3,7 +3,7 @@
         {
             "name": "stick",
             "description": "sticks are used to craft other items",
-            "quantity": 6
+            "quantity": 0
         },
         {
             "name": "wood",
@@ -13,17 +13,17 @@
         {
             "name": "stone",
             "description": "stones are used to craft other items",
-            "quantity": 2
+            "quantity": 0
         },
         {
             "name": "fibers",
             "description": "fibers are used to craft other items",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "axe",
             "description": "axes are used to chop down trees",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "pickaxe",
@@ -33,7 +33,7 @@
         {
             "name": "berry",
             "description": "It can be eaten for hunger.",
-            "quantity": 2
+            "quantity": 0
         },
         {
             "name": "fish",
@@ -43,12 +43,12 @@
         {
             "name": "rope",
             "description": "rope is used to craft other items",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "firepit",
             "description": "firepit is used to decrease stress",
-            "quantity": 2
+            "quantity": 1
         },
         {
             "name": "shelter",
@@ -74,6 +74,11 @@
             "name": "compass",
             "description": "raft is used to leave the remote island",
             "quantity": 0
-        }
+        },
+		{
+			"name": "torch",
+			"description": "torches reduce stress at night",
+			"quantity": 0
+		}
     ]
 }
