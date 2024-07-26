@@ -38,7 +38,7 @@
         },
         {
             "name": "sleep",
-            "description": "Sleep to restore energy."
+            "description": "Sleep to restore health."
         },
         {
             "name": "explore",

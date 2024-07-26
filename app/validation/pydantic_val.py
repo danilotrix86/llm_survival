@@ -21,7 +21,7 @@ class PlayerInfo(BaseModel):
     health: str
     hunger: str
     thirst: str
-    energy: str
+    stress: str
 
 class ActionRequest(BaseModel):
     action: str
