@@ -57,12 +57,20 @@
             "description": "Mine gold, used to craft a compass"
         },
         {
+            "name": "pick_sail",
+            "description": "An abandoned sail can be found in the forest, pick it up to craft a raft."
+        },
+        {
             "name": "mine_iron",
             "description": "Mine iron, used to craft a compass"
         },
         {
             "name": "craft_compass",
             "description": "Craft a compass needed to navigate with the raft. You need 2 gold 3 iron"
+        },
+        {
+            "name": "craft_torch",
+            "description": "Craft a torch to light up dark areas and reduce stress. You need 1 stick and 1 fiber"
         },
         {
             "name": "build_firepit",

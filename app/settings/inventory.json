@@ -3,17 +3,17 @@
         {
             "name": "stick",
             "description": "sticks are used to craft other items",
-            "quantity": 3
+            "quantity": 4
         },
         {
             "name": "wood",
             "description": "wood is used to craft other items",
-            "quantity": 0
+            "quantity": 2
         },
         {
             "name": "stone",
             "description": "stones are used to craft other items",
-            "quantity": 1
+            "quantity": 2
         },
         {
             "name": "fibers",
@@ -23,7 +23,7 @@
         {
             "name": "axe",
             "description": "axes are used to chop down trees",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "pickaxe",
@@ -48,12 +48,12 @@
         {
             "name": "firepit",
             "description": "firepit is used to decrease stress",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "shelter",
             "description": "shelter is used to sleep",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "fishrod",
@@ -76,9 +76,9 @@
             "quantity": 0
         },
         {
-			"name": "torch",
-			"description": "torches reduce stress at night and make it easier to see during the night",
-			"quantity": 0
-		}
+            "name": "torch",
+            "description": "torches reduce stress at night and make it easier to see during the night",
+            "quantity": 0
+        }
     ]
 }

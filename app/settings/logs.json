@@ -1,8 +1,8 @@
 {
     "logs": [
         {
-            "name": "explore",
-            "description": "The action 'explore' was executed with status 'success' and message: 'Explored Nature. There is nature around you'."
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
         },
         {
             "name": "pick_sticks",
@@ -13,20 +13,24 @@
             "description": "The action 'pick_stones' was executed with status 'success' and message: 'Picked up Stone'."
         },
         {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+            "name": "build_firepit",
+            "description": "The action 'build_firepit' was executed with status 'success' and message: 'You built Firepit'."
         },
         {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+            "name": "mine_iron",
+            "description": "The action 'mine_iron' was executed with status 'error' and message: 'No Iron found'."
         },
         {
-            "name": "pick_fibers",
-            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'Picked up Fibers'."
+            "name": "mine_iron",
+            "description": "The action 'mine_iron' was executed with status 'error' and message: 'No Iron found'."
         },
         {
-            "name": "pick_fibers",
-            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'Picked up Fibers'."
+            "name": "mine_iron",
+            "description": "The action 'mine_iron' was executed with status 'error' and message: 'No Iron found'."
+        },
+        {
+            "name": "mine_iron",
+            "description": "The action 'mine_iron' was executed with status 'error' and message: 'No Iron found'."
         }
     ]
 }
