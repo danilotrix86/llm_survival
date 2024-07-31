@@ -15,6 +15,10 @@
         {
             "name": "stress",
             "description": "Very low"
-        }
+        },
+		{
+			"name": "xp",
+			"description": "0"
+		}
     ]
 }
