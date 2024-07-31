@@ -17,7 +17,7 @@
     },
     {
       "name": "player_info",
-      "description": "Key player statistics and attributes, rated on a scale of Very Bad, Bad, Normal, Good, or Very Good. 'Bad' indicates need for improvement, while 'Good' signifies satisfactory performance"
+      "description": "Key player statistics and attributes, rated on a scale of Critival, Very Low, Low, Normal, Good, or Very Good. 'Low' indicates need for improvement, while 'Good' signifies satisfactory performance"
     },
     {
       "name": "inventory",
@@ -26,10 +26,6 @@
     {
       "name": "warnings",
       "description": "Critical alerts or cautions that the character should be aware of, potentially affecting decision-making or gameplay"
-    },
-    {
-      "name": "current_plan",
-      "description": "Outline of the character's current strategy or sequence of intended actions to achieve immediate goals"
     },
     {
       "name": "objectives",

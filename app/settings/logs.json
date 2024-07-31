@@ -1,36 +1,32 @@
 {
     "logs": [
         {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+            "name": "explore",
+            "description": "The action 'explore' was executed with status 'success' and message: 'Explored Nature. There is nature around you'."
         },
         {
             "name": "pick_sticks",
             "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+        },
+        {
+            "name": "pick_fibers",
+            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'Picked up Fibers'."
+        },
+        {
+            "name": "craft_rope",
+            "description": "The action 'craft_rope' was executed with status 'success' and message: 'Crafted Rope'."
+        },
+        {
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+        },
+        {
+            "name": "pick_berries",
+            "description": "The action 'pick_berries' was executed with status 'error' and message: 'GroupBerry has not grown yet. Wait for it to grow'."
         },
         {
             "name": "pick_stones",
             "description": "The action 'pick_stones' was executed with status 'success' and message: 'Picked up Stone'."
-        },
-        {
-            "name": "build_firepit",
-            "description": "The action 'build_firepit' was executed with status 'success' and message: 'You built Firepit'."
-        },
-        {
-            "name": "mine_iron",
-            "description": "The action 'mine_iron' was executed with status 'error' and message: 'No Iron found'."
-        },
-        {
-            "name": "mine_iron",
-            "description": "The action 'mine_iron' was executed with status 'error' and message: 'No Iron found'."
-        },
-        {
-            "name": "mine_iron",
-            "description": "The action 'mine_iron' was executed with status 'error' and message: 'No Iron found'."
-        },
-        {
-            "name": "mine_iron",
-            "description": "The action 'mine_iron' was executed with status 'error' and message: 'No Iron found'."
         }
     ]
 }

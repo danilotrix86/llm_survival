@@ -14,7 +14,7 @@
         },
         {
             "name": "cut_wood",
-            "description": "Cut wood to craft items. Axe is needed."
+            "description": "Cut and pick wood to craft items. Axe is needed."
         },
         {
             "name": "eat",
@@ -53,16 +53,8 @@
             "description": "Craft a pickaxe to mine iron and gold. To craft a pickaxe you need 1 wood 1 stone."
         },
         {
-            "name": "mine_gold",
-            "description": "Mine gold, used to craft a compass"
-        },
-        {
             "name": "pick_sail",
             "description": "An abandoned sail can be found in the forest, pick it up to craft a raft."
-        },
-        {
-            "name": "mine_iron",
-            "description": "Mine iron, used to craft a compass"
         },
         {
             "name": "craft_compass",
