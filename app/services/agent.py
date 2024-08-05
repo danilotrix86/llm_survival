@@ -53,7 +53,6 @@ class SurvivalGameAgent:
                     - inventory: the items you have
                     - logs: the actions you have performed
                     - objectives: the main objectives to complete
-                    - current_plan: the plan you just came up with
 
                     Explore all available books to gather information before deciding your next move. 
                     Return a JSON object with "action" (the next action to take) and "observation" (a short, informative explanation for that action). The action can only be one of the actions in the actions book.

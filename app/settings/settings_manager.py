@@ -288,19 +288,19 @@ class SettingsManager:
             self.reset_record("objectives")
             self.add_item('objectives', {
                 "name": "Build Firepit",
-                "description": "Build a firepit to cook food and keep warm."
+                "description": "Build a firepit to decrease stress. You need 4 sticks and 6 stones"
             })
 
         if (inventory.firepit > 0):
             self.reset_record("objectives")
             self.add_item('objectives', {
                 "name": "Craft a compass",
-                "description": "Craft a compass to help you navigate when escaping the island."
+                "description": "Craft a compass needed to navigate with the raft. You need 2 gold 3 iron"
             })
         
         if (inventory.compass > 0):
             self.reset_record("objectives")
             self.add_item('objectives', {
                 "name": "Craft a raft",
-                "description": "Craft a raft to escape the island and win the game."
+                "description": "Build a raft to leave the remote island. You need 15 woods, 5 sticks, 3 ropes, 1 sail and 1 compass"
             })

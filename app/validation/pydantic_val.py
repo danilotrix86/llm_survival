@@ -17,6 +17,8 @@ class Inventory(BaseModel):
     compass: int
     pickaxe: int
     torch: int
+    sail: int
+
 
 class PlayerInfo(BaseModel):
     health: str

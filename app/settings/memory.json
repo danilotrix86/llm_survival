@@ -24,10 +24,6 @@
       "description": "Detailed list of items currently in the player's possession, including quantities and any special properties"
     },
     {
-      "name": "warnings",
-      "description": "Critical alerts or cautions that the character should be aware of, potentially affecting decision-making or gameplay"
-    },
-    {
       "name": "objectives",
       "description": "List of primary and secondary goals the player must accomplish to progress in the game, including any time constraints or special conditions"
     }

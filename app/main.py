@@ -136,11 +136,8 @@ def start_new_game():
     try:
         # Clear the logs, current_plan, warnings and game_info
         settings_manager.reset_record("logs")
-        settings_manager.reset_record("current_plan")
-        settings_manager.reset_record("warnings")
         settings_manager.reset_record("game_info")
         settings_manager.reset_record("objectives")
-
 
         # Reset the inventory quantities
         settings_manager.reset_inventory_quantities()

@@ -1,32 +1,36 @@
 {
     "logs": [
         {
-            "name": "explore",
-            "description": "The action 'explore' was executed with status 'success' and message: 'Explored Nature. There is nature around you'."
-        },
-        {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+            "name": "pick_stones",
+            "description": "The action 'pick_stones' was executed with status 'success' and message: 'You picked up Stone'."
         },
         {
             "name": "pick_fibers",
-            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'Picked up Fibers'."
-        },
-        {
-            "name": "craft_rope",
-            "description": "The action 'craft_rope' was executed with status 'success' and message: 'Crafted Rope'."
+            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'You picked up Fibers'."
         },
         {
             "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'Picked up Stick'."
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick'."
         },
         {
-            "name": "pick_berries",
-            "description": "The action 'pick_berries' was executed with status 'error' and message: 'GroupBerry has not grown yet. Wait for it to grow'."
+            "name": "craft_axe",
+            "description": "The action 'craft_axe' was executed with status 'success' and message: 'You crafted Axe'."
+        },
+        {
+            "name": "cut_wood",
+            "description": "The action 'cut_wood' was executed with status 'success' and message: 'You cat down a tree'."
+        },
+        {
+            "name": "build_shelter",
+            "description": "The action 'build_shelter' was executed with status 'success' and message: 'You built Shelter'."
         },
         {
             "name": "pick_stones",
-            "description": "The action 'pick_stones' was executed with status 'success' and message: 'Picked up Stone'."
+            "description": "The action 'pick_stones' was executed with status 'success' and message: 'You picked up Stone'."
+        },
+        {
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick'."
         }
     ]
 }
