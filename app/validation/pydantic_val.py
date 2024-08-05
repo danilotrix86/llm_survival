@@ -17,14 +17,14 @@ class Inventory(BaseModel):
     compass: int
     pickaxe: int
     torch: int
-    sail: int
-
+    sail:  int
 
 class PlayerInfo(BaseModel):
     health: str
     hunger: str
     thirst: str
     stress: str
+    xp:     str
 
 class ActionRequest(BaseModel):
     action: str

@@ -2,19 +2,23 @@
     "player_info": [
         {
             "name": "health",
-            "description": "Very Low"
+            "description": "Very good"
         },
         {
             "name": "thirst",
-            "description": "Low"
+            "description": "Very good"
         },
         {
             "name": "hunger",
-            "description": "Normal"
+            "description": "Very good"
         },
         {
             "name": "stress",
-            "description": "Very Good"
-        }
+            "description": "Very low"
+        },
+		{
+			"name": "xp",
+			"description": "0"
+		}
     ]
 }
