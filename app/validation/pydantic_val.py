@@ -24,7 +24,6 @@ class PlayerInfo(BaseModel):
     hunger: str
     thirst: str
     stress: str
-    xp:     str
 
 class ActionRequest(BaseModel):
     action: str
@@ -32,6 +31,7 @@ class ActionRequest(BaseModel):
     message: str
     inventory: Inventory
     player_info: PlayerInfo
+    xp:     str
 
 class NextAction(BaseModel):
     action: str
