@@ -1,4 +1,4 @@
-# AI Project - Survival Game
+# AI CASTWAY - Can a LLM survive on a remote island?
 
 This project showcases an advanced AI-driven survival game where the AI agent is powered by large language models (LLMs). The system allows the AI to navigate complex survival scenarios dynamically, adapting its behavior based on its environment and experiences.
 
