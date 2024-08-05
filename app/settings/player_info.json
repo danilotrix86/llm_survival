@@ -14,11 +14,7 @@
         },
         {
             "name": "stress",
-            "description": "Very low"
-        },
-		{
-			"name": "xp",
-			"description": "0"
-		}
+            "description": "Very good"
+        }
     ]
 }

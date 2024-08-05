@@ -3,7 +3,7 @@
         {
             "name": "stick",
             "description": "sticks are used to craft other items",
-            "quantity": 3
+            "quantity": 0
         },
         {
             "name": "wood",
@@ -13,17 +13,17 @@
         {
             "name": "stone",
             "description": "stones are used to craft other items",
-            "quantity": 4
+            "quantity": 0
         },
         {
             "name": "fibers",
             "description": "fibers are used to craft other items",
-            "quantity": 2
+            "quantity": 0
         },
         {
             "name": "axe",
             "description": "axes are used to chop down trees",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "pickaxe",
@@ -33,7 +33,7 @@
         {
             "name": "berry",
             "description": "It can be eaten for hunger.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "fish",
@@ -53,7 +53,7 @@
         {
             "name": "shelter",
             "description": "shelter is used to sleep",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "fishrod",
@@ -90,5 +90,5 @@
             "description": "sail needed to craft a raft",
             "quantity": 0
         }
-	]
+    ]
 }
