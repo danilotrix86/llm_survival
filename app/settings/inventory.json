@@ -84,11 +84,6 @@
             "name": "torch",
             "description": "torches reduce stress at night and make it easier to see during the night",
             "quantity": 0
-        },
-        {
-            "name": "sail",
-            "description": "sail needed to craft a raft",
-            "quantity": 0
         }
     ]
 }

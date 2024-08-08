@@ -5,6 +5,7 @@
 		"Invalid": 			"The target of the command was invalid.",
 		"pick_sail.ErrorNoObject": 	"You have already the sail, no need to pick it up again",
 		"ErrorNoObject": 		"No {0} found, explore new areas to find more",
+		"shelter.ErrorNoObject": 	"No shelter found, explore new areas or craft one",
 		"ErrorTool": 			"You require a {1} for that. Craft or find one",
 		"ErrorCantAttack": 		"That object cannot be attacked",
                 "ErrorHarvestUnready": 		"{0} has not grown yet. Wait for it to grow",
@@ -21,7 +22,7 @@
 
 		"build.ErrorMissingItems": 	"You cannot build {0}, missing: {1}",
 		"build.ErrorNoLocation": 	"You cannot build {0}, no suitable location found",
-
+		"explore.ErrorNoLocation": 	"You explored all areas, no new areas found",
 		"craft.ErrorMissingItems": 	"You cannot craft {0}, missing: {1}",
 		"craft.Success": 		"You crafted {0}",
 
