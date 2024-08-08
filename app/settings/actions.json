@@ -14,7 +14,7 @@
         },
         {
             "name": "cut_wood",
-            "description": "Cut and pick wood to craft items. Axe is needed."
+            "description": "Cut trees to get wood to craft items. Axe is needed."
         },
         {
             "name": "eat",

@@ -1,8 +1,8 @@
 {
     "objectives": [
         {
-            "name": "Build Shelter",
-            "description": "Build a shelter to protect yourself from the elements, have fire and a place to sleep."
+            "name": "Craft a raft",
+            "description": "Build a raft to leave the remote island. You need 15 woods, 5 sticks, 3 ropes, 1 sail and 1 compass"
         }
     ]
 }

@@ -3,32 +3,32 @@
         {
             "name": "stick",
             "description": "sticks are used to craft other items",
-            "quantity": 0
+            "quantity": 4
         },
         {
             "name": "wood",
             "description": "wood is used to craft other items",
-            "quantity": 0
+            "quantity": 16
         },
         {
             "name": "stone",
             "description": "stones are used to craft other items",
-            "quantity": 0
+            "quantity": 11
         },
         {
             "name": "fibers",
             "description": "fibers are used to craft other items",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "axe",
             "description": "axes are used to chop down trees",
-            "quantity": 0
+            "quantity": 2
         },
         {
             "name": "pickaxe",
             "description": "pickaxe is used to mine iron and gold",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "berry",
@@ -38,32 +38,32 @@
         {
             "name": "fish",
             "description": "It can be eaten for hunger.",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "rope",
             "description": "rope is used to craft other items",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "firepit",
             "description": "firepit is used to decrease stress",
-            "quantity": 0
+            "quantity": 2
         },
         {
             "name": "shelter",
             "description": "shelter is used to sleep",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "fishrod",
             "description": "you can craft a fishrod that can be used to fish",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "iron",
             "description": "iron is used to craft the compass",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "gold",
@@ -73,17 +73,17 @@
         {
             "name": "compass",
             "description": "compass is needed to navigate with the raft",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "sail",
             "description": "sail is used to craft the raft",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "torch",
             "description": "torches reduce stress at night and make it easier to see during the night",
-            "quantity": 0
+            "quantity": 1
         }
     ]
 }

@@ -1,32 +1,32 @@
 {
 	"messages":
 	{
-		"CommandNotFound": 		"That was not a valid command.",
-		"Invalid": 			"The target of the command was invalid.",
-		"pick_sail.ErrorNoObject": 	"You have already the sail, no need to pick it up again",
-		"ErrorNoObject": 		"No {0} found, explore new areas to find more",
-		"shelter.ErrorNoObject": 	"No shelter found, explore new areas or craft one",
-		"ErrorTool": 			"You require a {1} for that. Craft or find one",
-		"ErrorCantAttack": 		"That object cannot be attacked",
-                "ErrorHarvestUnready": 		"{0} has not grown yet. Wait for it to grow",
+		"CommandNotFound": 			"That was not a valid command.",
+		"Invalid": 				"The action you are trying to perform is invalid. Try again.",
+		"pick_sail.ErrorNoObject": 		"You have already the sail, no need to pick it up again",
+		"ErrorNoObject": 			"No {0} found, explore new areas to find it",
+		"shelter.ErrorNoObject": 		"No shelter found, You can craft it",
+		"ErrorTool": 				"You require a {1} for that. You can craft it",
+		"ErrorCantAttack": 			"That object cannot be attacked",
+                "ErrorHarvestUnready": 			"{0} has not grown yet. Wait for it to grow",
 
-		"berries.ErrorHarvestUnready": 	"Berry has not grown yet. Wait for it to grow",
+		"berry.pick.ErrorHarvestUnready": 	"Berries have not grown yet. Wait for it to grow",
 
-		"drink.Success":     		"You just drank some water",
-		"grass.cut.Success": 		"You just cat down some grass",
-		"interact.Success": 		"You just interacted with {0}",
-		"collect.Success": 		"You just Collected {0}",
-        	"pick.Success": 		"You picked up {0}",
-                "fish.Success": 		"You caught a fish!",
-		"build.Success": 		"You built {0}",
+		"drink.Success":     			"You just drank some water",
+		"grass.cut.Success": 			"You just cat down some grass",
+		"interact.Success": 			"You just interacted with {0}",
+		"collect.Success": 			"You just Collected {0}",
+        	"pick.Success": 			"You picked up {0}",
+                "fish.Success": 			"You caught a fish!",
+		"build.Success": 			"You built {0}",
 
-		"build.ErrorMissingItems": 	"You cannot build {0}, missing: {1}",
-		"build.ErrorNoLocation": 	"You cannot build {0}, no suitable location found",
-		"explore.ErrorNoLocation": 	"You explored all areas, no new areas found",
-		"craft.ErrorMissingItems": 	"You cannot craft {0}, missing: {1}",
-		"craft.Success": 		"You crafted {0}",
+		"build.ErrorMissingItems": 		"You cannot build {0}, missing: {1}",
+		"build.ErrorNoLocation": 		"You cannot build {0}, no suitable location found",
+		"explore.ErrorNoLocation": 		"You explored all areas, no new areas found",
+		"craft.ErrorMissingItems": 		"You cannot craft {0}, missing: {1}",
+		"craft.Success": 			"You crafted {0}",
 
-		"wood.cut.ErrorTool": 		"You require an axe for that",
-		"wood.cut.Success": 		"You cat down a tree"
+		"wood.cut.ErrorTool": 			"You require an axe for that",
+		"wood.cut.Success": 			"You cat down a tree"
 	}
 }
