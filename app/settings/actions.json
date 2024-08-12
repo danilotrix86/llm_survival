@@ -66,11 +66,11 @@
         },
         {
             "name": "build_firepit",
-            "description": "Build a firepit to decrease stress. You need 4 sticks and 6 stones"
+            "description": "Build a firepit to decrease stress. You need 2 wood and 4 stones"
         },
         {
             "name": "craft_fishrod",
-            "description": "Craft a fishing rod to fish with. You need 3 sticks and 2 ropes"
+            "description": "Craft a fishing rod to fish with. You need 1 sticks and 1 rope"
         },
         {
             "name": "build_shelter",
