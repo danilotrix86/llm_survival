@@ -1,36 +1,36 @@
 {
     "logs": [
         {
-            "name": "gather_resources",
-            "description": "The action 'gather_resources' was executed with status 'error' and message: 'That was not a valid command.'."
+            "name": "pick_fibers",
+            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'You picked up Fibers.'."
         },
         {
-            "name": "gather_resources",
-            "description": "The action 'gather_resources' was executed with status 'error' and message: 'That was not a valid command.'."
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
         },
         {
-            "name": "gather_resources",
-            "description": "The action 'gather_resources' was executed with status 'error' and message: 'That was not a valid command.'."
+            "name": "pick_fibers",
+            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'You picked up Fibers.'."
         },
         {
-            "name": "gather_resources",
-            "description": "The action 'gather_resources' was executed with status 'error' and message: 'That was not a valid command.'."
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
         },
         {
-            "name": "gather_resources",
-            "description": "The action 'gather_resources' was executed with status 'error' and message: 'That was not a valid command.'."
+            "name": "cut_wood",
+            "description": "The action 'cut_wood' was executed with status 'error' and message: 'You require an axe for that.'."
         },
         {
-            "name": "explore",
-            "description": "The action 'explore' was executed with status 'success' and message: 'Explored Jungle. There is bananas around you'."
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
         },
         {
-            "name": "gather_resources",
-            "description": "The action 'gather_resources' was executed with status 'error' and message: 'That was not a valid command.'."
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
         },
         {
-            "name": "craft_axe",
-            "description": "The action 'craft_axe' was executed with status 'error' and message: 'You cannot craft Axe, missing: 2 Sticks, 1 Stone, .'."
+            "name": "craft_rope",
+            "description": "The action 'craft_rope' was executed with status 'success' and message: 'You crafted Rope.'."
         }
     ]
 }
