@@ -12,10 +12,6 @@
       "description": "Chronological record of all actions executed by the character, including timestamps and the outcomes of each action."
     },
     {
-      "name": "game_info",
-      "description": "Essential information about the game world, including the current location, time, and any relevant environmental factors affecting gameplay."
-    },
-    {
       "name": "player_info",
       "description": "Key statistics and attributes of the player, rated on a scale of Critical, Very Low, Low, Normal, Good, or Very Good. 'Low' or 'Critical' indicates a need for improvement, while 'Good' signifies satisfactory performance."
     },
