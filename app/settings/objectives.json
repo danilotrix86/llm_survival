@@ -1,8 +1,8 @@
 {
     "objectives": [
         {
-            "name": "Craft a raft",
-            "description": "Build a raft to leave the remote island. You need 15 woods, 5 sticks, 3 ropes, 1 sail and 1 compass"
+            "name": "Craft a compass",
+            "description": "Craft a compass needed to navigate with the raft. You need 2 gold 3 iron"
         }
     ]
 }

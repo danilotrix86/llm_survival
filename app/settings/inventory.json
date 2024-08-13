@@ -3,17 +3,17 @@
         {
             "name": "stick",
             "description": "sticks are used to craft other items",
-            "quantity": 4
+            "quantity": 3
         },
         {
             "name": "wood",
             "description": "wood is used to craft other items",
-            "quantity": 16
+            "quantity": 0
         },
         {
             "name": "stone",
             "description": "stones are used to craft other items",
-            "quantity": 11
+            "quantity": 12
         },
         {
             "name": "fibers",
@@ -23,7 +23,7 @@
         {
             "name": "axe",
             "description": "axes are used to chop down trees",
-            "quantity": 2
+            "quantity": 1
         },
         {
             "name": "pickaxe",
@@ -38,7 +38,7 @@
         {
             "name": "fish",
             "description": "It can be eaten for hunger.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "rope",
@@ -48,7 +48,7 @@
         {
             "name": "firepit",
             "description": "firepit is used to decrease stress",
-            "quantity": 2
+            "quantity": 1
         },
         {
             "name": "shelter",
@@ -68,17 +68,17 @@
         {
             "name": "gold",
             "description": "gold is used to craft the compass",
-            "quantity": 0
+            "quantity": 1
         },
         {
             "name": "compass",
             "description": "compass is needed to navigate with the raft",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "sail",
             "description": "sail is used to craft the raft",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "torch",

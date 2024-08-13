@@ -1,16 +1,20 @@
 {
     "logs": [
         {
-            "name": "cut_wood",
-            "description": "The action 'cut_wood' was executed with status 'success' and message: 'You cat down a tree'."
-        },
-        {
             "name": "pick_fibers",
             "description": "The action 'pick_fibers' was executed with status 'success' and message: 'You picked up Fibers'."
         },
         {
-            "name": "mine_iron",
-            "description": "The action 'mine_iron' was executed with status 'success' and message: 'You have mined some metal'."
+            "name": "eat",
+            "description": "The action 'eat' was executed with status 'success' and message: 'Ate Fish'."
+        },
+        {
+            "name": "pick_stones",
+            "description": "The action 'pick_stones' was executed with status 'success' and message: 'You picked up Stone'."
+        },
+        {
+            "name": "explore",
+            "description": "The action 'explore' was executed with status 'error' and message: 'You explored all areas, no new areas found'."
         },
         {
             "name": "craft_rope",
@@ -21,16 +25,12 @@
             "description": "The action 'cut_wood' was executed with status 'success' and message: 'You cat down a tree'."
         },
         {
-            "name": "drink",
-            "description": "The action 'drink' was executed with status 'success' and message: 'You just drank some water'."
+            "name": "craft_rope",
+            "description": "The action 'craft_rope' was executed with status 'error' and message: 'You cannot craft Rope, missing: 1 Fibers, '."
         },
         {
             "name": "build_raft",
-            "description": "The action 'build_raft' was executed with status 'error' and message: 'You cannot build Raft, missing: 14 Sticks, 8 Ropes, '."
-        },
-        {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick'."
+            "description": "The action 'build_raft' was executed with status 'success' and message: 'You built Raft'."
         }
     ]
 }
