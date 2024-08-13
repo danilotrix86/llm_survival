@@ -1,7 +1,7 @@
 {
 	"messages":
 	{
-		"CommandNotFound": 			"That was not a valid command.",
+		"CommandNotFound": 			"That is not a valid command. Use only commands from the actions list.",
 		"ErrorTimeout":        			"The action has timed out.",
 		"Invalid": 				"The action you are trying to perform is invalid. Try again.",
 		"pick_sail.ErrorNoObject": 		"You have already the sail, no need to pick it up again.",

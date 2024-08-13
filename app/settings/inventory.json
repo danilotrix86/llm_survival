@@ -3,7 +3,7 @@
         {
             "name": "stick",
             "description": "Sticks are basic materials used for crafting various items.",
-            "quantity": 3
+            "quantity": 0
         },
         {
             "name": "wood",
@@ -13,22 +13,22 @@
         {
             "name": "stone",
             "description": "Stones are versatile materials essential for crafting tools and structures.",
-            "quantity": 12
+            "quantity": 0
         },
         {
             "name": "fibers",
             "description": "Fibers are lightweight materials used for crafting ropes and other items.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "axe",
             "description": "An axe is a tool used to chop down trees and gather wood.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "pickaxe",
             "description": "A pickaxe is a tool used to mine resources like iron and gold.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "berry",
@@ -39,36 +39,36 @@
             "name": "fish",
             "description": "Fish can be consumed to satisfy hunger.",
             "quantity": 0
-        },        
+        },
         {
             "name": "rope",
             "description": "A rope is a versatile material used in crafting other items.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "firepit",
             "description": "A firepit reduces stress and provides warmth.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "shelter",
             "description": "A shelter provides a place to sleep and recover health.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "fishrod",
             "description": "A fishing rod is used to catch fish for food.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "iron",
             "description": "Iron is a crucial material used to craft the compass.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "gold",
             "description": "Gold is an essential material used to craft the compass.",
-            "quantity": 1
+            "quantity": 0
         },
         {
             "name": "compass",
@@ -83,7 +83,7 @@
         {
             "name": "torch",
             "description": "A torch reduces stress at night and provides light.",
-            "quantity": 1
-        }        
+            "quantity": 0
+        }
     ]
 }

@@ -1,8 +1,8 @@
 {
     "objectives": [
         {
-            "name": "Craft a compass",
-            "description": "Craft a compass needed to navigate with the raft. You need 2 gold 3 iron"
+            "name": "Build Shelter",
+            "description": "Build a shelter to protect yourself from the elements, have fire and a place to sleep."
         }
     ]
 }

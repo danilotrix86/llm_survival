@@ -29,8 +29,8 @@ class Decision:
             self.decision_wrapper = OpenAIWrapper(config.GPT_ENGINE)
             logging.info("OpenAI model initialized successfully")
         
-        # else if it's one of these: "llama3-8b-8192", "llama3-70b-8192", "mixtral-8x7b-32768", "gemma-7b-it"
-        elif config.LLM_ENGINE in ["llama3-8b-8192", "llama3-70b-8192", "mixtral-8x7b-32768", "gemma-7b-it"]:
+        # else if it's one of these: "llama3-8b-8192", "llama3-70b-8192", "llama-3.1-70b-versatile", "llama-3.1-405b-reasoning",  "mixtral-8x7b-32768", "gemma-7b-it", "gemma2-9b-it"
+        elif config.LLM_ENGINE in ["llama3-8b-8192", "llama3-70b-8192", "llama-3.1-70b-versatile", "llama-3.1-405b-reasoning",  "mixtral-8x7b-32768", "gemma-7b-it", "gemma2-9b-it"]:
             from services.aiwrapper import GroqWrapper
             self.decision_wrapper = GroqWrapper(config.LLM_ENGINE)
             logging.info("Groq model initialized successfully")
