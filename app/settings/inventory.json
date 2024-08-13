@@ -2,88 +2,88 @@
     "inventory": [
         {
             "name": "stick",
-            "description": "sticks are used to craft other items",
+            "description": "Sticks are basic materials used for crafting various items.",
             "quantity": 3
         },
         {
             "name": "wood",
-            "description": "wood is used to craft other items",
+            "description": "Wood is a fundamental resource used in crafting and building.",
             "quantity": 0
         },
         {
             "name": "stone",
-            "description": "stones are used to craft other items",
+            "description": "Stones are versatile materials essential for crafting tools and structures.",
             "quantity": 12
         },
         {
             "name": "fibers",
-            "description": "fibers are used to craft other items",
+            "description": "Fibers are lightweight materials used for crafting ropes and other items.",
             "quantity": 1
         },
         {
             "name": "axe",
-            "description": "axes are used to chop down trees",
+            "description": "An axe is a tool used to chop down trees and gather wood.",
             "quantity": 1
         },
         {
             "name": "pickaxe",
-            "description": "pickaxe is used to mine iron and gold",
+            "description": "A pickaxe is a tool used to mine resources like iron and gold.",
             "quantity": 1
         },
         {
             "name": "berry",
-            "description": "It can be eaten for hunger.",
+            "description": "Berries can be consumed to satisfy hunger.",
             "quantity": 0
         },
         {
             "name": "fish",
-            "description": "It can be eaten for hunger.",
+            "description": "Fish can be consumed to satisfy hunger.",
             "quantity": 0
-        },
+        },        
         {
             "name": "rope",
-            "description": "rope is used to craft other items",
+            "description": "A rope is a versatile material used in crafting other items.",
             "quantity": 1
         },
         {
             "name": "firepit",
-            "description": "firepit is used to decrease stress",
+            "description": "A firepit reduces stress and provides warmth.",
             "quantity": 1
         },
         {
             "name": "shelter",
-            "description": "shelter is used to sleep",
+            "description": "A shelter provides a place to sleep and recover health.",
             "quantity": 1
         },
         {
             "name": "fishrod",
-            "description": "you can craft a fishrod that can be used to fish",
+            "description": "A fishing rod is used to catch fish for food.",
             "quantity": 1
         },
         {
             "name": "iron",
-            "description": "iron is used to craft the compass",
+            "description": "Iron is a crucial material used to craft the compass.",
             "quantity": 1
         },
         {
             "name": "gold",
-            "description": "gold is used to craft the compass",
+            "description": "Gold is an essential material used to craft the compass.",
             "quantity": 1
         },
         {
             "name": "compass",
-            "description": "compass is needed to navigate with the raft",
+            "description": "A compass is necessary for navigating with the raft.",
             "quantity": 0
         },
         {
             "name": "sail",
-            "description": "sail is used to craft the raft",
+            "description": "A sail is required to craft the raft for travel.",
             "quantity": 0
         },
         {
             "name": "torch",
-            "description": "torches reduce stress at night and make it easier to see during the night",
+            "description": "A torch reduces stress at night and provides light.",
             "quantity": 1
-        }
+        }        
     ]
 }

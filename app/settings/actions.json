@@ -2,91 +2,91 @@
     "actions": [
         {
             "name": "pick_sticks",
-            "description": "Pick up sticks to craft items."
+            "description": "Pick up sticks from the ground. Sticks are used to craft various items."
         },
         {
             "name": "pick_stones",
-            "description": "Pick up stones to craft items."
+            "description": "Pick up stones from the ground. Stones are used to craft various items."
         },
         {
             "name": "pick_fibers",
-            "description": "Pick up fibers to craft items."
+            "description": "Pick up fibers from plants. Fibers are used to craft various items."
         },
         {
             "name": "cut_wood",
-            "description": "Cut trees to get wood to craft items. Axe is needed."
+            "description": "Cut down trees to gather wood. Wood is used to craft various items. Requires an axe."
         },
         {
             "name": "eat",
-            "description": "Eat to restore hunger. You can eat berries or fish (if available in your inventory)."
+            "description": "Eat to restore hunger. Consume berries or fish if available in your inventory."
         },
         {
             "name": "pick_berries",
-            "description": "Pick up berries to store for consumption."
+            "description": "Pick berries from bushes. Berries can be stored for later consumption."
         },
         {
             "name": "fish",
-            "description": "Go fishing to catch fish and store for consumption. Fish is better than berries. You need a fishing rod, craft it."
+            "description": "Go fishing to catch fish. Fish can be stored for later consumption and provides more sustenance than berries. Requires a crafted fishing rod."
         },
         {
             "name": "drink",
-            "description": "Drink to restore thirst."
+            "description": "Drink water to restore thirst."
         },
         {
             "name": "craft_rope",
-            "description": "Craft a rope to craft other items, you need 3 fibres"
+            "description": "Craft a rope using 3 fibers. Ropes are used to craft other items."
         },
         {
             "name": "sleep",
-            "description": "Sleep to restore health and stress."
+            "description": "Sleep to restore health and reduce stress."
         },
         {
             "name": "explore",
-            "description": "Explore new areas on the map."
+            "description": "Explore new areas on the map to discover resources and locations."
         },
         {
             "name": "craft_axe",
-            "description": "Craft a Axe to cut wood. To craft a axe you need 2 sticks and 1 stone."
+            "description": "Craft an axe using 2 sticks and 1 stone. The axe is used to cut wood."
         },
         {
             "name": "craft_pickaxe",
-            "description": "Craft a pickaxe to mine iron and gold. To craft a pickaxe you need 1 wood 1 stone."
+            "description": "Craft a pickaxe to mine valuable resources like iron and gold. Requires 1 wood and 1 stone."
         },
         {
             "name": "pick_sail",
-            "description": "An abandoned sail can be found in the forest, pick it up to craft a raft."
+            "description": "Find and collect an abandoned sail in the forest, essential for crafting a raft."
         },
         {
             "name": "craft_compass",
-            "description": "Craft a compass needed to navigate with the raft. You need 2 gold 3 iron"
+            "description": "Craft a compass to navigate with the raft. Requires 2 gold and 3 iron."
         },
         {
             "name": "craft_torch",
-            "description": "Craft a torch to light up dark areas and reduce stress. You need 1 stick and 1 fiber"
+            "description": "Craft a torch to illuminate dark areas and reduce stress. Requires 1 stick and 1 fiber."
         },
         {
             "name": "build_firepit",
-            "description": "Build a firepit to decrease stress. You need 2 wood and 4 stones"
+            "description": "Build a firepit to alleviate stress. Requires 2 wood and 4 stones."
         },
         {
             "name": "craft_fishrod",
-            "description": "Craft a fishing rod to fish with. You need 1 sticks and 1 rope"
+            "description": "Craft a fishing rod for catching fish. Requires 1 stick and 1 rope."
         },
         {
             "name": "build_shelter",
-            "description": "Build a shelter to sleep and keep your health level up. You need 4 woods, 2 sticks and 1 rope"
+            "description": "Build a shelter to rest and maintain your health. Requires 4 wood, 2 sticks, and 1 rope."
         },
         {
             "name": "build_raft",
-            "description": "Build a raft to leave the island. You need 15 woods, 5 sticks, 3 ropes, 1 sail and 1 compass"
+            "description": "Build a raft to escape the island. Requires 15 wood, 5 sticks, 3 ropes, 1 sail, and 1 compass."
         },
         {
             "name": "mine_gold",
-            "description": "Mine gold, used to craft a compass"
+            "description": "Mine gold, a key material for crafting a compass."
         },
         {
             "name": "mine_iron",
-            "description": "Mine iron, used to craft a compass"
-        }
+            "description": "Mine iron, a crucial resource for crafting a compass."
+        }        
     ]
 }

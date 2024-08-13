@@ -1,30 +1,30 @@
 [
     {
       "name": "instructions",
-      "description": "Detailed guidelines for the main character's behavior, personality, and decision-making process in the game"
+      "description": "Detailed guidelines outlining the main character's behavior, personality traits, and decision-making process within the game."
     },
     {
       "name": "actions",
-      "description": "Comprehensive list of all available actions the character can perform, including their effects and any prerequisites"
+      "description": "Comprehensive list of all actions available to the character, including their effects and any prerequisites required to perform them."
     },
     {
       "name": "logs",
-      "description": "Chronological record of all previous actions executed by the character, including timestamps and outcomes"
+      "description": "Chronological record of all actions executed by the character, including timestamps and the outcomes of each action."
     },
     {
       "name": "game_info",
-      "description": "Essential information about the game world, including current location, time, and any relevant environmental factors"
+      "description": "Essential information about the game world, including the current location, time, and any relevant environmental factors affecting gameplay."
     },
     {
       "name": "player_info",
-      "description": "Key player statistics and attributes, rated on a scale of Critival, Very Low, Low, Normal, Good, or Very Good. 'Low' indicates need for improvement, while 'Good' signifies satisfactory performance"
+      "description": "Key statistics and attributes of the player, rated on a scale of Critical, Very Low, Low, Normal, Good, or Very Good. 'Low' or 'Critical' indicates a need for improvement, while 'Good' signifies satisfactory performance."
     },
     {
       "name": "inventory",
-      "description": "Detailed list of items currently in the player's possession, including quantities and any special properties"
+      "description": "Detailed list of items currently in the player's possession, including quantities and any special properties or uses."
     },
     {
       "name": "objectives",
-      "description": "List of primary and secondary goals the player must accomplish to progress in the game, including any time constraints or special conditions"
+      "description": "List of primary and secondary goals the player must achieve to progress in the game, including any time constraints or special conditions."
     }
-  ]
+]
