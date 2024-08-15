@@ -1,5 +1,6 @@
 # AI CASTAWAY - Can a LLM survive on a remote island?
-![AI Castaway YouTube Cover](https://www.danilovaccalluzzo.it/llm_survival/ai_castaway_youtube_cover.jpg "AI Castaway YouTube Cover")
+[![AI Castaway YouTube Cover](https://www.danilovaccalluzzo.it/llm_survival/ai_castaway_youtube_cover.jpg)](https://www.youtube.com/watch?v=eHU7Kmio8Mw)
+**[Watch the video on YouTube](https://www.youtube.com/watch?v=eHU7Kmio8Mw)**
 
 This project showcases an advanced AI-driven survival game where the AI agent is powered by large language models (LLMs). The system allows the AI to navigate complex survival scenarios dynamically, adapting its behavior based on its environment and experiences.
 
