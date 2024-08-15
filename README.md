@@ -83,7 +83,8 @@ LOGS_SIZE = 8  # Number of logs to maintain
 
 APPROACH = "ZEROSHOT"  # Choose between "ZEROSHOT" or "AGENTIC"
 
-LLM_ENGINE = "openai"  # Set to "openai" or "groq"
+LLM_ENGINE = "openai"  # Set to "openai" or one of the following: "llama3-8b-8192", "llama3-70b-8192", "llama-3.1-70b-versatile", "llama-3.1-405b-reasoning" ONLY FOR PAYING MEMBERS,  "mixtral-8x7b-32768", "gemma-7b-it", "gemma2-9b-it"
+
 # If LLM_ENGINE is "openai", choose the GPT engine
 GPT_ENGINE = "gpt-4o"  # Choose between "gpt-4o", "gpt-4o-mini", or "gpt-3.5-turbo"
 
