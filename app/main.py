@@ -39,6 +39,7 @@ def get_messages():
     except Exception as e:
         logger.error(f"Error processing request: {e}")
         return JSONResponse(status_code=500, content={"message":str(e)})
+    
 
 @app.post("/next_action/")
 def get_next_action(action_request: ActionRequest = Body(...)):
@@ -69,100 +70,32 @@ def get_next_action(action_request: ActionRequest = Body(...)):
     # Process based on the configured approach
     if config.APPROACH == "ZEROSHOT":
 
-        try:
-            # Get the memory string from settings manager
-            memory = settings_manager.all_records_to_string()
-        except Exception as e:
-            logger.error(f"Error occurred while fetching memory records: {str(e)}")
-            return JSONResponse(
-                status_code=500,
-                content={"message": "Error occurred while fetching memory records", "error": str(e)}
-            )
+        memory = settings_manager.all_records_to_string()
+        total_tokens = total_tokens + settings_manager.num_tokens(memory)
 
         try:
-            # Calculate the total tokens based on memory
-            tokens_for_memory = settings_manager.num_tokens(memory)
-            total_tokens += tokens_for_memory
-        except Exception as e:
-            logger.error(f"Error occurred while calculating tokens: {str(e)}")
-            return JSONResponse(
-                status_code=500,
-                content={"message": "Error occurred while calculating tokens", "error": str(e)}
-            )
-
-        try:
-            # Log before initializing the Decision class
-            logger.info("Initializing Decision class.")
-
-            # Initialize Decision class
-            decisions = Decision(memory)
-
-        except Exception as e:
-            logger.error(f"Error occurred while initializing Decision class: {str(e)}")
-            return JSONResponse(
-                status_code=500,
-                content={"message": "Error occurred while initializing Decision class", "error": str(e)}
-            )
-
-        try:
-            # Log before calling get_next_action
-            logger.info("Calling get_next_action on Decision class.")
-
             # Get the next action from Decision class
+            decisions = Decision(memory)
             next_action = decisions.get_next_action()
-
-        except Exception as e:
-            logger.error(f"Error occurred while getting next action: {str(e)}")
-            return JSONResponse(
-                status_code=500,
-                content={"message": "Error occurred while getting next action", "error": str(e)}
-            )
-
-        try:
+            #logger.info(f"Next action: {next_action}")
             # Parse the next action JSON string into a dictionary
             next_action_dict = json.loads(next_action)
             action = next_action_dict.get("action")
             observation = next_action_dict.get("observation")
-        except json.JSONDecodeError as e:
-            logger.error(f"Error occurred while parsing JSON response: {str(e)}")
-            return JSONResponse(
-                status_code=500,
-                content={"message": "Error occurred while parsing JSON response", "error": str(e)}
-            )
-        except KeyError as e:
-            logger.error(f"Missing expected key in the action response: {str(e)}")
-            return JSONResponse(
-                status_code=500,
-                content={"message": "Missing expected key in the action response", "error": str(e)}
-            )
-        except Exception as e:
-            logger.error(f"Error occurred while processing the next action: {str(e)}")
-            return JSONResponse(
-                status_code=500,
-                content={"message": "Error occurred while processing the next action", "error": str(e)}
-            )
-
-        # Logging the action, observation, and tokens
-        try:
-            logger.info(
-                f"\n\n============= \n"
-                f"TOKENS: {tokens_for_memory}\n"
-                f"TOTAL TOKENS: {total_tokens}\n"
-                f"=============\n"
-                f"ACTION: {action}\n"
-                f"OBSERVATION: {observation}\n"
-                f"=============\n"
-                f"MESSAGE: {message}\n"
-                f"=============\n"
-            )
+            logger.info (f"\n\n============= \nTOKENS: {settings_manager.num_tokens(memory)}\nTOTAL TOKENS: {total_tokens}\n=============\nACTION: {action}\nOBSERVATION: {observation}\n=============\nMESSAGE: {message}\n=============\n")
             return action, observation
+        
         except Exception as e:
-            logger.error(f"Error occurred while logging action and observation: {str(e)}")
+            # Log the error
+            logger.error(f"Error occurred while getting next action: {str(e)}")
+            # Return an error response
             return JSONResponse(
                 status_code=500,
-                content={"message": "Error occurred while logging action and observation", "error": str(e)}
+                content={
+                    "message": "An error occurred while making a new decision",
+                    "error": str(e)
+                }
             )
-
     elif config.APPROACH == "AGENTIC":
         from services.agent import SurvivalGameAgent
 
@@ -229,5 +162,3 @@ def start_new_game():
     except Exception as e:
         logger.error(f"Unexpected error: {e}")
         raise HTTPException(status_code=500, detail="An unexpected error occurred")
-
-
