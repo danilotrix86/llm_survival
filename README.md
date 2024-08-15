@@ -4,19 +4,13 @@
 
 This project showcases an advanced AI-driven survival game where the AI agent is powered by large language models (LLMs). The system allows the AI to navigate complex survival scenarios dynamically, adapting its behavior based on its environment and experiences.
 
-## Abstract
+## Overview
 
-This thesis introduces a novel approach to creating an intelligent AI agent capable of surviving on a remote island by using large language models (LLMs). The AI agent autonomously manages resources, plans actions, and adapts strategies in a dynamic environment. This approach combines elements of game design, artificial intelligence, and human-computer interaction to deliver a more immersive and adaptable gameplay experience.
+This project is part of a master's degree thesis in Artificial Intelligence, demonstrating an AI-driven survival game called **AI Castaway**. In this game, the AI agent is placed on a remote island and must autonomously manage resources, track vital statistics, and make strategic decisions to survive. Powered by large language models (LLMs), the AI dynamically adapts its actions based on the environment and past experiences. The result is a unique survival simulation where the AI independently gathers resources, crafts tools, and builds structures, showcasing the potential of advanced AI architectures in game environments.
+
 
 ## Configuration
-
-### Approaches
-
-You can choose between two approaches for the AI's decision-making process:
-
-- **`ZEROSHOT`**: This approach leverages predefined responses and actions based on the AI's memory of past experiences. It relies on the AI's ability to understand context and provide responses without needing extensive retraining.
-
-- **`AGENTIC`**: This approach uses an agent-based system to generate responses dynamically based on the current state and environment. It emphasizes real-time adaptation and strategy formulation, allowing the AI to make decisions that are more context-aware.
+Configure the project by modifying the `app/config.py` file. Here are the key settings:
 
 ### LLM Engines
 
@@ -27,7 +21,11 @@ The AI's behavior can be powered by different LLM engines. The choice of LLM eng
 
 ### Configuration File
 
-Configure the project by modifying the `config.py` file. Here are the key settings:
+
+
+- **`ZEROSHOT`**: This approach leverages predefined responses and actions based on the AI's memory of past experiences. It relies on the AI's ability to understand context and provide responses without needing extensive retraining.
+
+- **`AGENTIC`**: This approach uses an agent-based system to generate responses dynamically based on the current state and environment. It emphasizes real-time adaptation and strategy formulation, allowing the AI to make decisions that are more context-aware.
 
 ```python
 LOGS_SIZE = 8
