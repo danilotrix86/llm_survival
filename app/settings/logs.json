@@ -1,32 +1,32 @@
 {
     "logs": [
         {
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
+        },
+        {
+            "name": "pick_sticks",
+            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
+        },
+        {
+            "name": "pick_stones",
+            "description": "The action 'pick_stones' was executed with status 'success' and message: 'You picked up Stone.'."
+        },
+        {
+            "name": "pick_stones",
+            "description": "The action 'pick_stones' was executed with status 'success' and message: 'You picked up Stone.'."
+        },
+        {
+            "name": "pick_stones",
+            "description": "The action 'pick_stones' was executed with status 'success' and message: 'You picked up Stone.'."
+        },
+        {
             "name": "pick_fibers",
             "description": "The action 'pick_fibers' was executed with status 'success' and message: 'You picked up Fibers.'."
         },
         {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
-        },
-        {
             "name": "pick_fibers",
             "description": "The action 'pick_fibers' was executed with status 'success' and message: 'You picked up Fibers.'."
-        },
-        {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
-        },
-        {
-            "name": "cut_wood",
-            "description": "The action 'cut_wood' was executed with status 'error' and message: 'You require an axe for that.'."
-        },
-        {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
-        },
-        {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
         },
         {
             "name": "craft_rope",
