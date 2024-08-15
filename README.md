@@ -20,9 +20,8 @@ You can choose between two approaches for the AI's decision-making process:
 
 The AI's behavior can be powered by different LLM engines. The choice of LLM engine impacts the cost and performance of the AI:
 
-- **OpenAI**: Utilizes OpenAI’s models. This requires setting `LLM_ENGINE` to `"openai"` and specifying a model from the available options such as `gpt-4o`, `gpt-4o-mini`, or `gpt-3.5-turbo`.
-
-- **Groq API**: Uses cost-effective models available through Groq. Set `LLM_ENGINE` to one of the following options: `"llama3-8b-8192"`, `"llama3-70b-8192"`, `"mixtral-8x7b-32768"`, or `"gemma-7b-it"`.
+- **OpenAI**: Utilizes OpenAI’s models. This requires setting `LLM_ENGINE` to `"openai"` and specifying a model from the available options such as `gpt-4o`, `gpt-4o-mini`, or `gpt-3.5-turbo` (pretty dumb).
+- **Groq API**: Uses cost-effective models available through Groq. Set `LLM_ENGINE` to one of the following options: `"llama3-8b-8192"`, `"llama3-70b-8192"`, `"llama-3.1-70b-versatile"`, `"mixtral-8x7b-32768"`, `"gemma-7b-it"` or `"gemma2-9b-it"`.
 
 ### Configuration File
 
@@ -123,9 +122,12 @@ The API provides detailed error messages and status codes to help with debugging
 
 The application uses Python's `logging` module for tracking important events and errors. Logs are displayed in the console and can be further configured in `logging.basicConfig`.
 
+## Source Code
+
+If you want to download the gaame source code, here's the GitHub repository:  
+[https://github.com/danilotrix86/llm_survival_source](https://github.com/danilotrix86/llm_survival_source)
+
 ## Credits
 
-This project is part of a master's degree thesis in Artificial Intelligence. The project was developed by [Danilo Vaccalluzzo](https://www.linkedin.com/in/danilovaccalluzzo/).
+This project is part of a master's degree thesis in Artificial Intelligence. The project was developed by Danilo Vaccalluzzo.
 
-You can contact me at:  
-[danilo.vaccalluzzo@gmail.com](mailto:danilo.vaccalluzzo@gmail.com)
