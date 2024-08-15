@@ -90,26 +90,30 @@ class Decision:
 
             # Log the raw response type and content for debugging
             logger.info(f"Raw response type: {type(response)}")
-            logger.info(f"Raw response: {response}")
+            logger.info(f"Raw response content: {response}")
 
-            # Try to extract the content from the response
-            try:
-                # Ensure we're working with text data
-                if isinstance(response, bytes):
-                    # Attempt to decode binary response as UTF-8 with error handling
+            # Ensure response is not binary
+            if isinstance(response, bytes):
+                try:
+                    # Decode binary data as UTF-8 and log the result
                     response_content = response.decode('utf-8', errors='replace')
-                    logger.warning(f"Response was binary, decoded with 'replace' for invalid UTF-8 sequences.")
-                else:
+                    logger.info(f"Decoded response content (bytes): {response_content}")
+                except UnicodeDecodeError as e:
+                    logger.error(f"Error decoding response as UTF-8: {str(e)}")
+                    return '{"action": "", "observation": "Error decoding response as UTF-8"}'
+            else:
+                try:
+                    # Log the structure of the response if it's not binary
                     response_content = response.choices[0].message.content
-
-            except AttributeError as e:
-                logger.error(f"Error accessing the response content: {str(e)}")
-                return '{"action": "", "observation": "Error accessing response content"}'
+                    logger.info(f"Extracted response content (text): {response_content}")
+                except AttributeError as e:
+                    logger.error(f"Error accessing the response content: {str(e)}")
+                    return '{"action": "", "observation": "Error accessing response content"}'
 
             # Log the raw content before further processing
-            logger.info(f"Raw response content: {response_content}")
+            logger.info(f"Final response content: {response_content}")
 
-            # Attempt to decode or validate the response content
+            # Validate and decode the response content
             try:
                 # Validate the response content with Pydantic
                 action_response = NextAction.model_validate_json(response_content)
@@ -130,4 +134,5 @@ class Decision:
             # Log the error
             logger.error(f"Error fetching next action: {str(e)}")
             return '{"action": "", "observation": "Error fetching next action"}'
+
 
