@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d016e04ccb58e33469bedc8e02168847, type: 3}
+  m_Name: OakTree
+  m_EditorClassIdentifier: 
+  id: oak_tree
+  title: Oak Tree
+  icon: {fileID: 21300000, guid: 3f58e27a4d4371b4ba2a5f0b6f45f0bc, type: 3}
+  desc: 
+  groups: []
+  craftable: 0
+  craft_quantity: 1
+  craft_duration: 0
+  craft_sort_order: 0
+  craft_near: {fileID: 0}
+  craft_items: []
+  craft_fillers: []
+  craft_requirements: []
+  craft_sound: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  plant_prefab: {fileID: 6563912304148791139, guid: 5f32c1a6fa03b5b4788491f7fa5d1d9d,
+    type: 3}
+  growth_stage_prefabs:
+  - {fileID: 7478897983751967604, guid: aa2fb912cd498a94b940737932556c4b, type: 3}
+  - {fileID: 6563912304148791139, guid: 5f32c1a6fa03b5b4788491f7fa5d1d9d, type: 3}
+  - {fileID: 7892068906072749908, guid: 2ea320b7b93331a409b57b407a3f8801, type: 3}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818e8475ede12204aa6f25cb998e15b4, type: 3}
+  m_Name: FieldAnimals
+  m_EditorClassIdentifier: 
+  density: 8
+  variance: 50
+  random_rotation: 1
+  random_scale: 0
+  spawns:
+  - prefab: {fileID: 2903144896332874383, guid: c61f50c50fef25e43a159d8e505a6973,
+      type: 3}
+    probability: 3
+  - prefab: {fileID: 8245567607413365085, guid: e80f2dbac47782a4cb8e45a5ba8016c6,
+      type: 3}
+    probability: 1
+  - prefab: {fileID: 7796402747371700114, guid: 1c00fdbb14384674ba66dd2859f8e14a,
+      type: 3}
+    probability: 1

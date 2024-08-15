@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: e6bb234ed4c67d740936eba12db832a5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ear.L.001
+    100002: ear.R.001
+    100004: elbowIK.L
+    100006: elbowIK.R
+    100008: foot.L
+    100010: foot.R
+    100012: front_foot.L
+    100014: front_foot.R
+    100016: front_shin.L
+    100018: front_shin.L.001
+    100020: front_shin.R
+    100022: front_shin.R.001
+    100024: front_thigh.L
+    100026: front_thigh.R
+    100028: front_toe.L
+    100030: front_toe.R
+    100032: metarig_wolf
+    100034: shin.L
+    100036: shin.L.001
+    100038: shin.R
+    100040: shin.R.001
+    100042: shoulder.L
+    100044: shoulder.R
+    100046: spine
+    100048: spine.001
+    100050: spine.003
+    100052: spine.004
+    100054: spine.005
+    100056: spine.006
+    100058: spine.008
+    100060: spine.009
+    100062: spine.011
+    100064: thigh.L
+    100066: thigh.R
+    100068: toe.L
+    100070: toe.R
+    100072: Wolf
+    100074: //RootNode
+    400000: ear.L.001
+    400002: ear.R.001
+    400004: elbowIK.L
+    400006: elbowIK.R
+    400008: foot.L
+    400010: foot.R
+    400012: front_foot.L
+    400014: front_foot.R
+    400016: front_shin.L
+    400018: front_shin.L.001
+    400020: front_shin.R
+    400022: front_shin.R.001
+    400024: front_thigh.L
+    400026: front_thigh.R
+    400028: front_toe.L
+    400030: front_toe.R
+    400032: metarig_wolf
+    400034: shin.L
+    400036: shin.L.001
+    400038: shin.R
+    400040: shin.R.001
+    400042: shoulder.L
+    400044: shoulder.R
+    400046: spine
+    400048: spine.001
+    400050: spine.003
+    400052: spine.004
+    400054: spine.005
+    400056: spine.006
+    400058: spine.008
+    400060: spine.009
+    400062: spine.011
+    400064: thigh.L
+    400066: thigh.R
+    400068: toe.L
+    400070: toe.R
+    400072: Wolf
+    400074: //RootNode
+    2100000: Material.002
+    4300000: Wolf
+    7400000: wolf_attack
+    9500000: //RootNode
+    13700000: Wolf
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: wolf_attack
+      takeName: Scene
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

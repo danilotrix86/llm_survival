@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4554822755393121925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7257224309544190157}
+  - component: {fileID: 3551751730358631755}
+  - component: {fileID: 2934961191108926997}
+  m_Layer: 0
+  m_Name: LLMManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7257224309544190157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554822755393121925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.294581, y: -193.86754, z: 95.146935}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3551751730358631755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554822755393121925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7322fbefbbb886948a5c5e0bb58eadc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 0}
+  buildables:
+    _serializedList:
+    - Key: shelter
+      Value: {fileID: 11400000, guid: 298cfbf6a6693aa40a282354f6901699, type: 2}
+  interactableGroups:
+    _serializedList:
+    - Key: fish
+      Value: {fileID: 11400000, guid: a40abfb60196f45ff8979dd7bb02e61f, type: 2}
+    - Key: berries
+      Value: {fileID: 11400000, guid: 484d53456cdab4c61a4b48f765f48dcb, type: 2}
+    - Key: shelter
+      Value: {fileID: 11400000, guid: 421f4dbde982f1f4b9c9b001f9eea5e8, type: 2}
+    - Key: water
+      Value: {fileID: 11400000, guid: 15f4b05f7c038a94f9c99789292d67fd, type: 2}
+    - Key: grass
+      Value: {fileID: 11400000, guid: 5d835a324a6e6154f8c4992254352541, type: 2}
+  attackableGroups:
+    _serializedList:
+    - Key: wood
+      Value: {fileID: 11400000, guid: 2bb4ae133d4dafd46906fa87e14b8088, type: 2}
+  collectibleItems:
+    _serializedList:
+    - Key: sticks
+      Value: {fileID: 11400000, guid: 6435eef7201f66f448a1e45356b6ac66, type: 2}
+    - Key: fibers
+      Value: {fileID: 11400000, guid: 2a498b4f16a2b81459327a397e98c4a5, type: 2}
+    - Key: stones
+      Value: {fileID: 11400000, guid: 4cafd98656786724a868a2434d92eb95, type: 2}
+  substitutions:
+    _serializedList:
+    - Key: fish
+      Value: interact_fish
+    - Key: pick_berries
+      Value: interact_berries
+    - Key: cut_wood
+      Value: attack_wood
+    - Key: sleep
+      Value: interact_shelter
+    - Key: drink
+      Value: interact_water
+--- !u!114 &2934961191108926997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554822755393121925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4074654e70a16bc4db64ba38fe272318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dCommandStr:
+    _serializedList:
+    - Key: 113
+      Value: explore
+    - Key: 101
+      Value: pick_fibers
+    - Key: 256
+      Value: pick_sticks
+    - Key: 257
+      Value: pick_stones
+    - Key: 258
+      Value: pick_fibers
+    - Key: 259
+      Value: cut_wood
+    - Key: 260
+      Value: eat
+    - Key: 261
+      Value: drink
+    - Key: 262
+      Value: sleep
+    - Key: 263
+      Value: explore
+    - Key: 264
+      Value: craft_axe
+    - Key: 265
+      Value: craft_rope

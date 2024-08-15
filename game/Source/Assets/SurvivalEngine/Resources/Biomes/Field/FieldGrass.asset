@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818e8475ede12204aa6f25cb998e15b4, type: 3}
+  m_Name: FieldGrass
+  m_EditorClassIdentifier: 
+  density: 50
+  variance: 70
+  random_rotation: 1
+  random_scale: 0.2
+  spawns:
+  - prefab: {fileID: 5525324171749232920, guid: c41b233e65b2c274bbc345b60034d321,
+      type: 3}
+    probability: 4
+  - prefab: {fileID: 3201309627310344135, guid: cd7d816b406ee1449b157bd6510d4690,
+      type: 3}
+    probability: 1
+  - prefab: {fileID: 3201309627310344135, guid: 006c632f6bf991540a587eb1f613c7aa,
+      type: 3}
+    probability: 1
+  - prefab: {fileID: 7892068906072749908, guid: e7057d4fce004d64683edd4236cda28b,
+      type: 3}
+    probability: 0.4
+  - prefab: {fileID: 5473193963595754087, guid: 8a50a1c99f7dd8d4794e82f1d82b622b,
+      type: 3}
+    probability: 0.2

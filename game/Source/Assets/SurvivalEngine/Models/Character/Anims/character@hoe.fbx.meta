@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 4f870b9b151c0ff469522d0dc17dd5d3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: armature
+    100002: Character
+    100004: //RootNode
+    100006: chest
+    100008: f_middle.01.L
+    100010: f_middle.01.R
+    100012: f_middle.02.L
+    100014: f_middle.02.R
+    100016: f_middle.03.L
+    100018: f_middle.03.R
+    100020: foot.L
+    100022: foot.R
+    100024: forearm.L
+    100026: forearm.R
+    100028: hand.L
+    100030: hand.R
+    100032: head
+    100034: hips
+    100036: neck
+    100038: shin.L
+    100040: shin.R
+    100042: shoulder.L
+    100044: shoulder.R
+    100046: spine
+    100048: thigh.L
+    100050: thigh.R
+    100052: thumb.01.L
+    100054: thumb.01.R
+    100056: thumb.02.L
+    100058: thumb.02.R
+    100060: thumb.03.L
+    100062: thumb.03.R
+    100064: upper_arm.L
+    100066: upper_arm.R
+    400000: armature
+    400002: Character
+    400004: //RootNode
+    400006: chest
+    400008: f_middle.01.L
+    400010: f_middle.01.R
+    400012: f_middle.02.L
+    400014: f_middle.02.R
+    400016: f_middle.03.L
+    400018: f_middle.03.R
+    400020: foot.L
+    400022: foot.R
+    400024: forearm.L
+    400026: forearm.R
+    400028: hand.L
+    400030: hand.R
+    400032: head
+    400034: hips
+    400036: neck
+    400038: shin.L
+    400040: shin.R
+    400042: shoulder.L
+    400044: shoulder.R
+    400046: spine
+    400048: thigh.L
+    400050: thigh.R
+    400052: thumb.01.L
+    400054: thumb.01.R
+    400056: thumb.02.L
+    400058: thumb.02.R
+    400060: thumb.03.L
+    400062: thumb.03.R
+    400064: upper_arm.L
+    400066: upper_arm.R
+    2100000: Material.005
+    2100002: Material.001
+    2100004: Material.006
+    2100006: Material.004
+    2100008: Material.002
+    2100010: Material.003
+    4300000: Character
+    7400000: character_hoe
+    9500000: //RootNode
+    13700000: Character
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: character_hoe
+      takeName: armature|Hoe
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

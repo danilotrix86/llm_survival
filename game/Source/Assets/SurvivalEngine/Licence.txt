@@ -1,0 +1,53 @@
+
+Licence:
+
+All assets in this package are governed by the Unity Asset Store EULA
+https://unity3d.com/legal/as_terms
+
+Summary:
+You are allowed to use this project template in your commercial game. 
+You are NOT allowed to distribute or resell the source code, assets and files contained in this package. 
+You are allowed to distribute or sell the compiled executable created using this. 
+
+
+However, a few third party assets, have a different licence. 
+
+All files in folder: SurvivalEngine/Fonts
+Licence: Open Font (Google fonts)
+https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
+Shaders in SurvivalEngine/Materials
+Built-in shaders from Unity Technologies with a MIT license
+https://choosealicense.com/licenses/mit/
+
+Scripts in SurvivalEngine/Scripts/NavMesh
+Are made by Unity Technologies with a MIT license
+https://choosealicense.com/licenses/mit/
+
+
+All other assets were created by the team below
+
+
+---------------------------
+
+Credits:
+
+Programming and Unity integration
+Indie Marc (https://indiemarc.com/)
+
+
+3D Art
+Antonio Maricic (https://www.artstation.com/antoniomaricic)
+Marwan Hany (https://www.fiverr.com/marwan_hany)
+Pogwitch (https://www.fiverr.com/pogwitch)
+
+Animation
+Naufalrezki (https://www.artstation.com/naufalrezki30)
+Hamzasketches (https://www.fiverr.com/hamzasketches)
+
+2D UI and Icons
+Helen Lien (http://helenlien.com)
+Ayesstudios (https://www.fiverr.com/ayesstudios)
+
+SFX
+Andey Fellowes (https://soundcloud.com/andeyfellowescomposer)

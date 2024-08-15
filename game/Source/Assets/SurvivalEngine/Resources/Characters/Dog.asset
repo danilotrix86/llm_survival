@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63f14476e2ad7d4caaa81375ac5fa7d, type: 3}
+  m_Name: Dog
+  m_EditorClassIdentifier: 
+  id: pet_dog
+  title: Dog
+  icon: {fileID: 21300000, guid: fa720a90b6a05df47a2ae1147ccb6e53, type: 3}
+  desc: A pet to help you!
+  groups: []
+  craftable: 1
+  craft_quantity: 1
+  craft_duration: 0
+  craft_sort_order: 0
+  craft_near: {fileID: 0}
+  craft_items: []
+  craft_fillers: []
+  craft_requirements: []
+  craft_sound: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  character_prefab: {fileID: 7553518408414687012, guid: 08487ab00bef5f943881d609c8b39c81,
+    type: 3}

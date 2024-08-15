@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e15d9a0eaa5d5499be04c134c83f5c, type: 3}
+  m_Name: Tropic
+  m_EditorClassIdentifier: 
+  id: tropic
+  probability: 1
+  starting_zone: 0
+  name: Tropic
+  desc: tropic
+  floor_material: {fileID: 2100000, guid: 8405007fd3c506945843ce180c11d340, type: 2}
+  elevation: 0
+  is_water: 0
+  spawns:
+  - {fileID: 11400000, guid: deff9cd0787ab6443a8f8ef1f1313971, type: 2}
+  - {fileID: 11400000, guid: 6654e144c93ad594db24d7b8a7b69dd6, type: 2}
+  - {fileID: 11400000, guid: bbf3b6c49be93f44e87a840897dd3659, type: 2}
+  - {fileID: 11400000, guid: 7470b9586bf9cc7428df166df1fc7988, type: 2}
+  - {fileID: 11400000, guid: 2c19bf3bcca8ab84cac8a8171807a735, type: 2}

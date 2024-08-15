@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239b05dc28dd3364ba565d09dac64d13, type: 3}
+  m_Name: Bread
+  m_EditorClassIdentifier: 
+  id: bread
+  title: Bread
+  icon: {fileID: 21300000, guid: 94c422d0198b16b4d87f0f286c175f3a, type: 3}
+  desc: Edible and sweet.
+  groups:
+  - {fileID: 11400000, guid: 372cdb04558f5244dba55876bd902466, type: 2}
+  craftable: 1
+  craft_quantity: 1
+  craft_duration: 0
+  craft_sort_order: 0
+  craft_near: {fileID: 11400000, guid: 272a0f2d4a570bf4a87df7bd63ad96d1, type: 2}
+  craft_items:
+  - {fileID: 11400000, guid: a64d5154c9d74ce468f568ea496a64ff, type: 2}
+  - {fileID: 11400000, guid: da105bfdff77e5b41b17c72082c56d9d, type: 2}
+  craft_fillers: []
+  craft_requirements: []
+  craft_xp: 10
+  craft_xp_type: cooking
+  craft_sound: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  type: 10
+  inventory_max: 20
+  durability_type: 10
+  durability: 100
+  equip_slot: 0
+  equip_side: 0
+  armor: 0
+  bag_size: 0
+  equip_bonus: []
+  weapon_type: 0
+  damage: 0
+  range: 0
+  attack_speed: 0
+  attack_cooldown: 0
+  strike_per_attack: 0
+  strike_interval: 0
+  eat_hp: 1
+  eat_hunger: 10
+  eat_thirst: 0
+  eat_happiness: 5
+  eat_bonus: []
+  eat_bonus_duration: 0
+  actions:
+  - {fileID: 11400000, guid: 303f8b2db86c0064aa7067d5332c4658, type: 2}
+  - {fileID: 11400000, guid: c940e7d1134ced948824248625884a12, type: 2}
+  - {fileID: 11400000, guid: d2e00df561181024d9d85af8d6b9c5bc, type: 2}
+  buy_cost: 0
+  sell_cost: 0
+  container_data: {fileID: 0}
+  plant_data: {fileID: 0}
+  construction_data: {fileID: 0}
+  character_data: {fileID: 0}
+  projectile_group: {fileID: 0}
+  item_prefab: {fileID: 5105315284736348922, guid: 53906034134410b44b3c814a7aa56224,
+    type: 3}
+  equipped_prefab: {fileID: 0}
+  projectile_prefab: {fileID: 0}

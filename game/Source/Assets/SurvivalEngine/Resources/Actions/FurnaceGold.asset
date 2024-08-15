@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d542f1940fa5a43ac61d3d4180850e, type: 3}
+  m_Name: FurnaceGold
+  m_EditorClassIdentifier: 
+  title: Melt
+  merge_target: {fileID: 11400000, guid: 0f81a0b43fdede449ab5b1a3434c57a6, type: 2}
+  melt_item: {fileID: 11400000, guid: aa0f158bf7781d841bdbf65369f2cb6a, type: 2}
+  melt_item_quantity: 1
+  duration: 1

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818e8475ede12204aa6f25cb998e15b4, type: 3}
+  m_Name: TropicTree
+  m_EditorClassIdentifier: 
+  density: 25
+  variance: 10
+  random_rotation: 1
+  random_scale: 0.2
+  spawns:
+  - prefab: {fileID: 1457904004209041817, guid: e16d2bd3a8c6dba48910ca27a14ce8b1,
+      type: 3}
+    probability: 3
+  - prefab: {fileID: 1457904004209041817, guid: ba8b87d63311e03438ea38d1cf6dd192,
+      type: 3}
+    probability: 2
+  - prefab: {fileID: 3646894389723712506, guid: f8ea7b41263801e4cb57013a9594ca7b,
+      type: 3}
+    probability: 1
+  - prefab: {fileID: 5473193963595754087, guid: 8a50a1c99f7dd8d4794e82f1d82b622b,
+      type: 3}
+    probability: 0.5

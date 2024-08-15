@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818e8475ede12204aa6f25cb998e15b4, type: 3}
+  m_Name: ForestTree
+  m_EditorClassIdentifier: 
+  density: 40
+  variance: 50
+  random_rotation: 1
+  random_scale: 0.2
+  spawns:
+  - prefab: {fileID: 6343493202445579137, guid: 13181bc63cf5c66409222a0493123f13,
+      type: 3}
+    probability: 2
+  - prefab: {fileID: 1270004717927838685, guid: f2e218df53338ab4ebdee7fd702249ba,
+      type: 3}
+    probability: 8
+  - prefab: {fileID: 5007265615999521550, guid: f30ee2a7a65b60b4d8f93ddc470f53c4,
+      type: 3}
+    probability: 0.5

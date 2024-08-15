@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: f4dabe7c8039e33419227a740b652935
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bear
+    100004: //RootNode
+    100006: Chest
+    100008: Ear.L
+    100010: Ear.R
+    100012: ElbowIK.L
+    100014: ElbowIK.R
+    100016: Feet.L
+    100018: Feet.R
+    100020: ForeArm.L
+    100022: ForeArm.R
+    100024: Hand.L
+    100026: Hand.R
+    100028: HandIK.L
+    100030: HandIK.R
+    100032: Head
+    100034: HellIK.L
+    100036: HellIK.R
+    100038: Hips
+    100040: KneeIK.L
+    100042: KneeIK.R
+    100044: Neck
+    100046: Pelvis
+    100048: Root
+    100050: Shin.L
+    100052: Shin.R
+    100054: Shoulder.L
+    100056: Shoulder.R
+    100058: Spine
+    100060: Thigh.L
+    100062: Thigh.R
+    100064: UpperArm.L
+    100066: UpperArm.R
+    400000: Armature
+    400002: Bear
+    400004: //RootNode
+    400006: Chest
+    400008: Ear.L
+    400010: Ear.R
+    400012: ElbowIK.L
+    400014: ElbowIK.R
+    400016: Feet.L
+    400018: Feet.R
+    400020: ForeArm.L
+    400022: ForeArm.R
+    400024: Hand.L
+    400026: Hand.R
+    400028: HandIK.L
+    400030: HandIK.R
+    400032: Head
+    400034: HellIK.L
+    400036: HellIK.R
+    400038: Hips
+    400040: KneeIK.L
+    400042: KneeIK.R
+    400044: Neck
+    400046: Pelvis
+    400048: Root
+    400050: Shin.L
+    400052: Shin.R
+    400054: Shoulder.L
+    400056: Shoulder.R
+    400058: Spine
+    400060: Thigh.L
+    400062: Thigh.R
+    400064: UpperArm.L
+    400066: UpperArm.R
+    2100000: Material.001
+    4300000: Bear
+    7400000: bear_attack
+    9500000: //RootNode
+    13700000: Bear
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: bear_attack
+      takeName: Scene
+      firstFrame: 1
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

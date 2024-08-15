@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239b05dc28dd3364ba565d09dac64d13, type: 3}
+  m_Name: Hammer
+  m_EditorClassIdentifier: 
+  id: hammer
+  title: Hammer
+  icon: {fileID: 21300000, guid: 2b4b51ad0709f9541a1856208ef9c1bf, type: 3}
+  desc: Use to destroy constructions.
+  groups:
+  - {fileID: 11400000, guid: 508854f2befed3244863e941bb9ffcff, type: 2}
+  - {fileID: 11400000, guid: 8e5f66039de51ad4ca917f4fcdbe15b2, type: 2}
+  craftable: 1
+  craft_quantity: 1
+  craft_duration: 0
+  craft_sort_order: 1
+  craft_near: {fileID: 0}
+  craft_items:
+  - {fileID: 11400000, guid: ff17a3d8277ae7747bfb1f6f538bdd45, type: 2}
+  - {fileID: 11400000, guid: 4cafd98656786724a868a2434d92eb95, type: 2}
+  craft_fillers: []
+  craft_requirements: []
+  craft_xp: 0
+  craft_xp_type: 
+  craft_sound: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  type: 20
+  inventory_max: 1
+  durability_type: 5
+  durability: 0
+  equip_slot: 10
+  equip_side: 2
+  armor: 0
+  bag_size: 0
+  equip_bonus: []
+  weapon_type: 10
+  damage: 10
+  range: 1
+  attack_speed: 1
+  attack_cooldown: 1
+  strike_per_attack: 0
+  strike_interval: 0
+  eat_hp: 0
+  eat_hunger: 0
+  eat_thirst: 0
+  eat_happiness: 0
+  eat_bonus: []
+  eat_bonus_duration: 0
+  actions:
+  - {fileID: 11400000, guid: 15af810dc6fe6b746b53fcc59374e103, type: 2}
+  - {fileID: 11400000, guid: c940e7d1134ced948824248625884a12, type: 2}
+  - {fileID: 11400000, guid: d2e00df561181024d9d85af8d6b9c5bc, type: 2}
+  buy_cost: 0
+  sell_cost: 0
+  container_data: {fileID: 0}
+  plant_data: {fileID: 0}
+  construction_data: {fileID: 0}
+  character_data: {fileID: 0}
+  projectile_group: {fileID: 0}
+  item_prefab: {fileID: 8848165943325543866, guid: c321327e23a9dbc42ac75498772b4d3b,
+    type: 3}
+  equipped_prefab: {fileID: 2649446762894786493, guid: 7670d7b064e4be946a3223f0e85c043f,
+    type: 3}
+  projectile_prefab: {fileID: 0}

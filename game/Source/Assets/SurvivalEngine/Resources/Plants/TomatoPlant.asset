@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d016e04ccb58e33469bedc8e02168847, type: 3}
+  m_Name: TomatoPlant
+  m_EditorClassIdentifier: 
+  id: tomato_plant
+  title: Tomato Plant
+  icon: {fileID: 21300000, guid: 20d28a4ffb4beba47901571e9ffbb3e2, type: 3}
+  desc: Grows tomatoes
+  groups: []
+  craftable: 0
+  craft_quantity: 1
+  craft_duration: 0
+  craft_sort_order: 0
+  craft_near: {fileID: 0}
+  craft_items: []
+  craft_fillers: []
+  craft_requirements: []
+  craft_sound: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  plant_prefab: {fileID: 4938540728644661369, guid: f6ca405446294fe48869228838dc7aa8,
+    type: 3}
+  growth_stage_prefabs:
+  - {fileID: 4938540728644661369, guid: f6ca405446294fe48869228838dc7aa8, type: 3}
+  - {fileID: 1023968600406995185, guid: 2402be8ad590a8e478c952e83e5b08fc, type: 3}
+  - {fileID: 3201309627310344135, guid: f3d30a031042adc41a4ebde984bcea8b, type: 3}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e15d9a0eaa5d5499be04c134c83f5c, type: 3}
+  m_Name: Water
+  m_EditorClassIdentifier: 
+  id: water
+  probability: 3
+  floor_material: {fileID: 2100000, guid: 6efd4b3ef4672a2409f976d5f0273fa1, type: 2}
+  elevation: -0.25
+  is_water: 1
+  spawns:
+  - {fileID: 11400000, guid: d2ebeaa896c2dd44cb675b6fd0afc62a, type: 2}

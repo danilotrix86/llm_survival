@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1765279216777269011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1765279216777269010}
+  - component: {fileID: 1765279216777269009}
+  m_Layer: 0
+  m_Name: WorldGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1765279216777269010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765279216777269011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1765279216777269009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765279216777269011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d12e7a29a615941aaf59ad4d015097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  seed: 2147483647
+  map_size: 200
+  nb_zones: 100
+  iterations: 1000
+  biomes:
+  - {fileID: 11400000, guid: 0efaeadf2a0b13a4fa6e5afab564605f, type: 2}
+  - {fileID: 11400000, guid: 16919abcf8b604a4aa9d1b1995a06c73, type: 2}
+  - {fileID: 11400000, guid: 2a7c49d56d2e2f14ba9b181d4a354d27, type: 2}
+  - {fileID: 11400000, guid: 0fb744261dcbdba4e822953754c6eae3, type: 2}
+  - {fileID: 11400000, guid: 392066c6ae655d546933294587b3dfa9, type: 2}
+  - {fileID: 11400000, guid: 697d371ae686aa445b1046212d1433ea, type: 2}
+  - {fileID: 11400000, guid: 9a1eb69289616034599d078de7ffb67e, type: 2}
+  - {fileID: 11400000, guid: 522dfa6c1f15bf24fbc4d35091425fea, type: 2}
+  walls_mat: {fileID: 2100000, guid: 6fb8a9435e5bacf42a38884c512fc9de, type: 2}
+  water_action: {fileID: 11400000, guid: 721446a73d648c84cb1af2d5cf79a7ce, type: 2}
+  water_group: {fileID: 11400000, guid: 15f4b05f7c038a94f9c99789292d67fd, type: 2}
+  world: {fileID: 0}
+  zones: []
+  points: []
+  walls: []

@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 2cd3117297275a542852147002bb8d10
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: armature
+    100002: chest
+    100004: f_middle.01.L
+    100006: f_middle.01.R
+    100008: f_middle.02.L
+    100010: f_middle.02.R
+    100012: f_middle.03.L
+    100014: f_middle.03.R
+    100016: foot.L
+    100018: foot.R
+    100020: forearm.L
+    100022: forearm.R
+    100024: hand.L
+    100026: hand.R
+    100028: head
+    100030: hips
+    100032: neck
+    100034: shin.L
+    100036: shin.R
+    100038: shoulder.L
+    100040: shoulder.R
+    100042: spine
+    100044: thigh.L
+    100046: thigh.R
+    100048: thumb.01.L
+    100050: thumb.01.R
+    100052: thumb.02.L
+    100054: thumb.02.R
+    100056: thumb.03.L
+    100058: thumb.03.R
+    100060: upper_arm.L
+    100062: upper_arm.R
+    100064: //RootNode
+    100066: ZombieMesh
+    400000: armature
+    400002: chest
+    400004: f_middle.01.L
+    400006: f_middle.01.R
+    400008: f_middle.02.L
+    400010: f_middle.02.R
+    400012: f_middle.03.L
+    400014: f_middle.03.R
+    400016: foot.L
+    400018: foot.R
+    400020: forearm.L
+    400022: forearm.R
+    400024: hand.L
+    400026: hand.R
+    400028: head
+    400030: hips
+    400032: neck
+    400034: shin.L
+    400036: shin.R
+    400038: shoulder.L
+    400040: shoulder.R
+    400042: spine
+    400044: thigh.L
+    400046: thigh.R
+    400048: thumb.01.L
+    400050: thumb.01.R
+    400052: thumb.02.L
+    400054: thumb.02.R
+    400056: thumb.03.L
+    400058: thumb.03.R
+    400060: upper_arm.L
+    400062: upper_arm.R
+    400064: //RootNode
+    400066: ZombieMesh
+    2100000: Zombie Skin
+    2100002: Overall.002
+    2100004: Bone
+    2100006: Pupil
+    2100008: Eyes
+    2100010: Brain
+    4300000: ZombieMesh
+    7400000: enemy_attack
+    9500000: //RootNode
+    13700000: ZombieMesh
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: enemy_attack
+      takeName: armature|Attack
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

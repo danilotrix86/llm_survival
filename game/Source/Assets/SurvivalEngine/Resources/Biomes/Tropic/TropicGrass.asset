@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818e8475ede12204aa6f25cb998e15b4, type: 3}
+  m_Name: TropicGrass
+  m_EditorClassIdentifier: 
+  density: 15
+  variance: 50
+  random_rotation: 1
+  random_scale: 0.1
+  spawns:
+  - prefab: {fileID: 5525324171749232920, guid: c41b233e65b2c274bbc345b60034d321,
+      type: 3}
+    probability: 3

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8f16b05f78064478fbf5d353d7239e, type: 3}
+  m_Name: CreateSettings
+  m_EditorClassIdentifier: 
+  prefab_folder: SurvivalEngine/Prefabs
+  prefab_equip_folder: SurvivalEngine/Prefabs/Equip
+  items_folder: SurvivalEngine/Resources/Items
+  constructions_folder: SurvivalEngine/Resources/Constructions
+  plants_folder: SurvivalEngine/Resources/Plants
+  characters_folder: SurvivalEngine/Resources/Characters
+  outline: {fileID: 2100000, guid: 87b42a05f4ec13f439ad92fca183c44f, type: 2}
+  death_fx: {fileID: 1782698244953427790, guid: cc10862cc8c3185468a39f6726d9739a,
+    type: 3}
+  craft_audio: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  take_fx: {fileID: 771872157719671656, guid: d60c5c6c5a1ef4d4cb2c550bb13512cb, type: 3}
+  take_audio: {fileID: 8300000, guid: c26bb97f4ba0c7b4bafdf9603ecf8d56, type: 3}
+  attack_audio: {fileID: 8300000, guid: ac4f5683f30b7f843ac8a81262bb731a, type: 3}
+  build_audio: {fileID: 8300000, guid: 9dc750595ba1c9f40a56855b46944b70, type: 3}
+  build_fx: {fileID: 1782698244953427790, guid: cc10862cc8c3185468a39f6726d9739a,
+    type: 3}
+  item_actions:
+  - {fileID: 11400000, guid: c940e7d1134ced948824248625884a12, type: 2}
+  - {fileID: 11400000, guid: d2e00df561181024d9d85af8d6b9c5bc, type: 2}
+  equip_action: {fileID: 11400000, guid: 15af810dc6fe6b746b53fcc59374e103, type: 2}
+  eat_action: {fileID: 11400000, guid: 303f8b2db86c0064aa7067d5332c4658, type: 2}

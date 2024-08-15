@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63f14476e2ad7d4caaa81375ac5fa7d, type: 3}
+  m_Name: Rabbit
+  m_EditorClassIdentifier: 
+  id: rabbit
+  title: Rabbit
+  icon: {fileID: 21300000, guid: eb9279abe633520489a9e578b329282a, type: 3}
+  desc: An animal!
+  groups: []
+  craftable: 0
+  craft_quantity: 1
+  craft_duration: 0
+  craft_sort_order: 0
+  craft_near: {fileID: 0}
+  craft_items: []
+  craft_fillers: []
+  craft_requirements: []
+  craft_sound: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  character_prefab: {fileID: 2903144896332874383, guid: c61f50c50fef25e43a159d8e505a6973,
+    type: 3}

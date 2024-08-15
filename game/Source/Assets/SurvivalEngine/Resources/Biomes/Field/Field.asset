@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e15d9a0eaa5d5499be04c134c83f5c, type: 3}
+  m_Name: Field
+  m_EditorClassIdentifier: 
+  id: field
+  probability: 1
+  starting_zone: 0
+  name: Field
+  desc: a field
+  floor_material: {fileID: 2100000, guid: 78dad05ad9436514a916e3185f9bd9cb, type: 2}
+  elevation: 0
+  is_water: 0
+  spawns:
+  - {fileID: 11400000, guid: e434a53547899f04e8d72d5038fc5f00, type: 2}
+  - {fileID: 11400000, guid: 11e748ed4e52649469788370eba0725a, type: 2}
+  - {fileID: 11400000, guid: 850af7f4543adc24284c36df1a2e4cd4, type: 2}
+  - {fileID: 11400000, guid: c35eaed36bed6e34fa7a503e5d164f89, type: 2}

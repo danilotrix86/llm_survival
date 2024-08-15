@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d016e04ccb58e33469bedc8e02168847, type: 3}
+  m_Name: BerryBushRed
+  m_EditorClassIdentifier: 
+  id: berry_plant_red
+  title: Berry Bush
+  icon: {fileID: 0}
+  desc: Grows berries
+  groups: []
+  craftable: 0
+  craft_quantity: 1
+  craft_duration: 0.5
+  craft_sort_order: 0
+  craft_near: {fileID: 0}
+  craft_items: []
+  craft_fillers: []
+  craft_requirements: []
+  craft_sound: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  plant_prefab: {fileID: 4855019028528828339, guid: 4a6e5466aad3c5b47a164fdcd5a4d2ff,
+    type: 3}
+  growth_stage_prefabs: []

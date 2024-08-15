@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818e8475ede12204aa6f25cb998e15b4, type: 3}
+  m_Name: ForestLeafItems
+  m_EditorClassIdentifier: 
+  density: 15
+  variance: 15
+  spawns:
+  - prefab: {fileID: 2007343269848344843, guid: b1b5a454705ad1e468ba1cb118491e32,
+      type: 3}
+    probability: 4
+  - prefab: {fileID: 4087578852689733029, guid: 27633b1e22b20a347850d9e94c28e28c,
+      type: 3}
+    probability: 2
+  - prefab: {fileID: 7654105342291985998, guid: 60a786d7cf6cfc8469f2a7353caf416d,
+      type: 3}
+    probability: 1
+  - prefab: {fileID: 450808838089084389, guid: 22786e1045a2c794dbe46d5808748a80, type: 3}
+    probability: 0.5

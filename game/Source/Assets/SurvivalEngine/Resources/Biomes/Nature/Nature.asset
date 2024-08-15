@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e15d9a0eaa5d5499be04c134c83f5c, type: 3}
+  m_Name: Nature
+  m_EditorClassIdentifier: 
+  id: nature
+  probability: 3
+  starting_zone: 1
+  name: Nature
+  desc: nature
+  floor_material: {fileID: 2100000, guid: 60e08d412e0d981438aa09110ae92586, type: 2}
+  elevation: 0
+  is_water: 0
+  spawns:
+  - {fileID: 11400000, guid: 09b36bc2513808d46920d3aed44493d7, type: 2}
+  - {fileID: 11400000, guid: 0162ca06e539c074f9d25c4fb00ea6c0, type: 2}
+  - {fileID: 11400000, guid: 172a2beddc2fdb34791ceaf5c9dbb5f9, type: 2}
+  - {fileID: 11400000, guid: 51515735b3574db4f8753f0a93401473, type: 2}
+  - {fileID: 11400000, guid: 048a6cdd953eec448980e0dad68ab3c4, type: 2}
+  - {fileID: 11400000, guid: c9a4468993e429b4a87540c1fc45fbae, type: 2}

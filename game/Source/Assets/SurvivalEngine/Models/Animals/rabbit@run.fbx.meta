@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 97d6f6b3d5f948444b32d089b52c9332
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Chest
+    100004: Ear.L
+    100006: Ear.R
+    100008: EarTip.L
+    100010: EarTip.R
+    100012: ElbowIK.L
+    100014: ElbowIK.R
+    100016: Feet.L
+    100018: Feet.R
+    100020: Forearm.L
+    100022: Forearm.R
+    100024: Hand.L
+    100026: Hand.R
+    100028: HandIK.L
+    100030: HandIK.R
+    100032: Head
+    100034: HeelIK.L
+    100036: HeelIK.R
+    100038: KneeIK.L
+    100040: KneeIK.R
+    100042: Neck
+    100044: Pelvis
+    100046: Rabbit
+    100048: //RootNode
+    100050: Root
+    100052: Shin.L
+    100054: Shin.R
+    100056: Shoulder.L
+    100058: Shoulder.R
+    100060: Spine
+    100062: Toe.L
+    100064: Toe.R
+    100066: UpperArm.L
+    100068: UpperArm.R
+    100070: UpperLeg.L
+    100072: UpperLeg.R
+    400000: Armature
+    400002: Chest
+    400004: Ear.L
+    400006: Ear.R
+    400008: EarTip.L
+    400010: EarTip.R
+    400012: ElbowIK.L
+    400014: ElbowIK.R
+    400016: Feet.L
+    400018: Feet.R
+    400020: Forearm.L
+    400022: Forearm.R
+    400024: Hand.L
+    400026: Hand.R
+    400028: HandIK.L
+    400030: HandIK.R
+    400032: Head
+    400034: HeelIK.L
+    400036: HeelIK.R
+    400038: KneeIK.L
+    400040: KneeIK.R
+    400042: Neck
+    400044: Pelvis
+    400046: Rabbit
+    400048: //RootNode
+    400050: Root
+    400052: Shin.L
+    400054: Shin.R
+    400056: Shoulder.L
+    400058: Shoulder.R
+    400060: Spine
+    400062: Toe.L
+    400064: Toe.R
+    400066: UpperArm.L
+    400068: UpperArm.R
+    400070: UpperLeg.L
+    400072: UpperLeg.R
+    2100000: Material.004
+    4300000: Rabbit
+    7400000: rabbit_run
+    9500000: //RootNode
+    13700000: Rabbit
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: rabbit_run
+      takeName: Scene
+      firstFrame: 1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

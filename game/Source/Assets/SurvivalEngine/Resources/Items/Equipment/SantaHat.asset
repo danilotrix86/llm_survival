@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239b05dc28dd3364ba565d09dac64d13, type: 3}
+  m_Name: SantaHat
+  m_EditorClassIdentifier: 
+  id: santa_hat
+  title: Santa Hat
+  icon: {fileID: 21300000, guid: f35db17398de88849baa6339eec6300f, type: 3}
+  desc: A nice hat!
+  groups: []
+  craftable: 0
+  craft_quantity: 1
+  craft_duration: 0
+  craft_sort_order: 0
+  craft_near: {fileID: 0}
+  craft_items:
+  - {fileID: 11400000, guid: 6b30e52579d14bc48b278438066d67ea, type: 2}
+  - {fileID: 11400000, guid: 6b30e52579d14bc48b278438066d67ea, type: 2}
+  - {fileID: 11400000, guid: 2a498b4f16a2b81459327a397e98c4a5, type: 2}
+  craft_fillers: []
+  craft_requirements: []
+  craft_xp: 0
+  craft_xp_type: 
+  craft_sound: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  type: 20
+  inventory_max: 1
+  durability_type: 8
+  durability: 72
+  equip_slot: 20
+  equip_side: 0
+  armor: 1
+  bag_size: 0
+  equip_bonus:
+  - {fileID: 11400000, guid: 79d2967726663e74a9ead22b6541d2f3, type: 2}
+  weapon_type: 0
+  damage: 0
+  range: 0
+  attack_speed: 1
+  attack_cooldown: 1
+  strike_per_attack: 0
+  strike_interval: 0
+  eat_hp: 0
+  eat_hunger: 0
+  eat_thirst: 0
+  eat_happiness: 0
+  eat_bonus: []
+  eat_bonus_duration: 0
+  actions:
+  - {fileID: 11400000, guid: 15af810dc6fe6b746b53fcc59374e103, type: 2}
+  - {fileID: 11400000, guid: d2e00df561181024d9d85af8d6b9c5bc, type: 2}
+  buy_cost: 0
+  sell_cost: 0
+  container_data: {fileID: 0}
+  plant_data: {fileID: 0}
+  construction_data: {fileID: 0}
+  character_data: {fileID: 0}
+  projectile_group: {fileID: 0}
+  item_prefab: {fileID: 2210013554630510695, guid: 2dd3e11cf0abe854cb94c2dc9c716cd8,
+    type: 3}
+  equipped_prefab: {fileID: 2427690967008982650, guid: e9a8fa07724388e449ebe3d288bd73c1,
+    type: 3}
+  projectile_prefab: {fileID: 0}

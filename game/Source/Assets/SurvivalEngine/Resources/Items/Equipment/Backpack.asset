@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239b05dc28dd3364ba565d09dac64d13, type: 3}
+  m_Name: Backpack
+  m_EditorClassIdentifier: 
+  id: backpack
+  title: Backpack
+  icon: {fileID: 21300000, guid: a5c9c0347d5b32e4cae9f15baef3b4ff, type: 3}
+  desc: To store things!
+  groups:
+  - {fileID: 11400000, guid: 2ffb8801a7731d94d9c532878df81bd0, type: 2}
+  craftable: 1
+  craft_quantity: 1
+  craft_duration: 0
+  craft_sort_order: 5
+  craft_near: {fileID: 0}
+  craft_items:
+  - {fileID: 11400000, guid: 33f37dc75b1a17a43aa91b5f8d5ef806, type: 2}
+  - {fileID: 11400000, guid: 6b30e52579d14bc48b278438066d67ea, type: 2}
+  - {fileID: 11400000, guid: 6b30e52579d14bc48b278438066d67ea, type: 2}
+  craft_fillers: []
+  craft_requirements: []
+  craft_xp: 0
+  craft_xp_type: 
+  craft_sound: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  type: 20
+  inventory_max: 1
+  durability_type: 8
+  durability: 250
+  equip_slot: 50
+  equip_side: 0
+  armor: 0
+  bag_size: 5
+  equip_bonus: []
+  weapon_type: 0
+  damage: 0
+  range: 0
+  attack_speed: 1
+  attack_cooldown: 1
+  strike_per_attack: 0
+  strike_interval: 0
+  eat_hp: 0
+  eat_hunger: 0
+  eat_thirst: 0
+  eat_happiness: 0
+  eat_bonus: []
+  eat_bonus_duration: 0
+  actions:
+  - {fileID: 11400000, guid: 15af810dc6fe6b746b53fcc59374e103, type: 2}
+  - {fileID: 11400000, guid: d2e00df561181024d9d85af8d6b9c5bc, type: 2}
+  buy_cost: 0
+  sell_cost: 0
+  container_data: {fileID: 0}
+  plant_data: {fileID: 0}
+  construction_data: {fileID: 0}
+  character_data: {fileID: 0}
+  projectile_group: {fileID: 0}
+  item_prefab: {fileID: 2210013554630510695, guid: 4be494ae55e44234e9515140f92a03d9,
+    type: 3}
+  equipped_prefab: {fileID: 2427690967008982650, guid: 90a22f084aa94eb488f521d6c2046f7f,
+    type: 3}
+  projectile_prefab: {fileID: 0}

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a336e45a3accee14bbb503c02af80756, type: 3}
+  m_Name: FurnaceMix
+  m_EditorClassIdentifier: 
+  id: furnacemix
+  title: FurnaceMix
+  icon: {fileID: 21300000, guid: ad02620ddc872b6438746549f1a627fd, type: 3}
+  desc: Melt Metal!
+  groups:
+  - {fileID: 11400000, guid: 41ef3d1b2b7917e48be57952de7a0bbf, type: 2}
+  craftable: 0
+  craft_quantity: 1
+  craft_duration: 0
+  craft_sort_order: 6
+  craft_near: {fileID: 0}
+  craft_items:
+  - {fileID: 11400000, guid: 4cafd98656786724a868a2434d92eb95, type: 2}
+  - {fileID: 11400000, guid: 4cafd98656786724a868a2434d92eb95, type: 2}
+  - {fileID: 11400000, guid: 4cafd98656786724a868a2434d92eb95, type: 2}
+  - {fileID: 11400000, guid: 2a15992b76b7ef64ab85a3da1cecbfba, type: 2}
+  - {fileID: 11400000, guid: 2a15992b76b7ef64ab85a3da1cecbfba, type: 2}
+  craft_fillers: []
+  craft_requirements: []
+  craft_xp: 10
+  craft_xp_type: 
+  craft_sound: {fileID: 8300000, guid: a959259a1dc64384291aa531cc0f73b1, type: 3}
+  construction_prefab: {fileID: 5268362974172124911, guid: ff3b5c9c8a943e5419b76c26c4225e5d,
+    type: 3}
+  take_item_data: {fileID: 0}
+  durability_type: 0
+  durability: 0
