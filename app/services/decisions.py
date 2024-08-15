@@ -88,12 +88,20 @@ class Decision:
             # Get the next action from the model
             response = self.decision_wrapper.completion(response_format="json")
 
-            # Log the raw response for debugging
+            # Log the raw response type and content for debugging
+            logger.info(f"Raw response type: {type(response)}")
             logger.info(f"Raw response: {response}")
 
             # Try to extract the content from the response
             try:
-                response_content = response.choices[0].message.content
+                # Ensure we're working with text data
+                if isinstance(response, bytes):
+                    # Attempt to decode binary response as UTF-8 with error handling
+                    response_content = response.decode('utf-8', errors='replace')
+                    logger.warning(f"Response was binary, decoded with 'replace' for invalid UTF-8 sequences.")
+                else:
+                    response_content = response.choices[0].message.content
+
             except AttributeError as e:
                 logger.error(f"Error accessing the response content: {str(e)}")
                 return '{"action": "", "observation": "Error accessing response content"}'
@@ -122,3 +130,4 @@ class Decision:
             # Log the error
             logger.error(f"Error fetching next action: {str(e)}")
             return '{"action": "", "observation": "Error fetching next action"}'
+
