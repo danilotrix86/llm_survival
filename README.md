@@ -9,56 +9,8 @@ This project showcases an advanced AI-driven survival game where the AI agent is
 This project is part of a master's degree thesis in Artificial Intelligence, demonstrating an AI-driven survival game called **AI Castaway**. In this game, the AI agent is placed on a remote island and must autonomously manage resources, track vital statistics, and make strategic decisions to survive. Powered by large language models (LLMs), the AI dynamically adapts its actions based on the environment and past experiences. The result is a unique survival simulation where the AI independently gathers resources, crafts tools, and builds structures, showcasing the potential of advanced AI architectures in game environments.
 
 
-## Configuration
-Configure the project by modifying the `app/config.py` file. Here are the key settings:
-
-### LLM Engines
-
-The AI's behavior can be powered by different LLM engines. The choice of LLM engine impacts the cost and performance of the AI:
-
-- **OpenAI**: Utilizes OpenAI’s models. This requires setting `LLM_ENGINE` to `"openai"` and specifying a model from the available options such as `gpt-4o`, `gpt-4o-mini`, or `gpt-3.5-turbo` (pretty dumb).
-- **Groq API**: Uses cost-effective models available through Groq. Set `LLM_ENGINE` to one of the following options: `"llama3-8b-8192"`, `"llama3-70b-8192"`, `"llama-3.1-70b-versatile"`, `"mixtral-8x7b-32768"`, `"gemma-7b-it"` or `"gemma2-9b-it"`.
-
-### Configuration File
 
 
-
-- **`ZEROSHOT`**: This approach leverages predefined responses and actions based on the AI's memory of past experiences. It relies on the AI's ability to understand context and provide responses without needing extensive retraining.
-
-- **`AGENTIC`**: This approach uses an agent-based system to generate responses dynamically based on the current state and environment. It emphasizes real-time adaptation and strategy formulation, allowing the AI to make decisions that are more context-aware.
-
-```python
-LOGS_SIZE = 8
-
-APPROACH = "ZEROSHOT"  # Choose between "ZEROSHOT" and "AGENTIC"
-
-LLM_ENGINE = "openai"  # Choose between "openai" and "groq"
-# If LLM_ENGINE = "openai"
-GPT_ENGINE = "gpt-4o"  # Choose between "gpt-4o", "gpt-4o-mini", or "gpt-3.5-turbo"
-
-LLM_TEMPERATURE = 0.5
-```
-
-- **`LOGS_SIZE`**: Defines the number of logs to maintain.
-- **`APPROACH`**: Set this to either `"ZEROSHOT"` or `"AGENTIC"` based on the desired decision-making approach.
-- **`LLM_ENGINE`**: Choose the LLM engine. If set to `"openai"`, specify the `GPT_ENGINE`. For Groq models, use one of the specified Groq models.
-- **`LLM_TEMPERATURE`**: Controls the randomness of responses. A value closer to 0 makes the output more deterministic, while higher values introduce more randomness.
-
-### Environment Variables
-
-Create a `.env` file in the root directory to configure API keys for the LLM engines. The file should include:
-
-- **For OpenAI Engine:**
-  ```plaintext
-  OPENAI_API_KEY=your_openai_api_key_here
-  ```
-
-- **For Groq API Engine:**
-  ```plaintext
-  GROQ_API_KEY=your_groq_api_key_here
-  ```
-
-Replace `your_openai_api_key_here` and `your_groq_api_key_here` with your actual API keys.
 
 ## Getting Started
 
@@ -91,6 +43,69 @@ To start using the project:
    ```bash
    pip install -r requirements.txt
    ```
+
+## Configuration
+
+To configure the project, modify the `config.py` file. Below are the key settings you need to adjust for the AI's behavior and decision-making process.
+
+### LLM Engines
+
+The AI's behavior is powered by different large language models (LLMs). The choice of LLM engine impacts both performance and cost:
+
+- **OpenAI**: Uses OpenAI’s models. To use this, set `LLM_ENGINE` to `"openai"` and set `GPT_ENGINE` to one of the following models:
+  - `"gpt-4o"`
+  - `"gpt-4o-mini"`
+  - `"gpt-3.5-turbo"`
+
+- **Groq API**: Offers cost-effective models through Groq. To use these models, set `LLM_ENGINE` to one of the following models:
+  - `"llama3-8b-8192"`
+  - `"llama3-70b-8192"`
+  - `"llama-3.1-70b-versatile"`
+  - `"mixtral-8x7b-32768"`
+  - `"gemma-7b-it"`
+  - `"gemma2-9b-it"`
+
+`GPT_ENGINE` is not important with these settings.
+### Approaches
+
+There are two possible decision-making approaches for the AI:
+
+- **`ZEROSHOT`**: The Zero-Shot approach is designed for simplicity and efficiency. In this method, a single call is made to the large language model (LLM) with all the relevant game data (including the AI’s current state, environment, and memory). The LLM processes this information in one shot and generates the next action for the AI.
+  
+- **`AGENTIC`**: The Agentic approach is more sophisticated, allowing the AI to make context-sensitive decisions by querying specific pieces of information as needed. Instead of providing the LLM with all the data at once, the AI agent selectively retrieves relevant information (e.g., current vital stats, environmental changes) before deciding on an action. This approach leverages frameworks like LangChain to dynamically access different memory components.
+
+### Configuration File Example
+
+Here’s an example of the key configuration settings in `config.py`:
+
+```python
+LOGS_SIZE = 8  # Number of logs to maintain
+
+APPROACH = "ZEROSHOT"  # Choose between "ZEROSHOT" or "AGENTIC"
+
+LLM_ENGINE = "openai"  # Set to "openai" or "groq"
+# If LLM_ENGINE is "openai", choose the GPT engine
+GPT_ENGINE = "gpt-4o"  # Choose between "gpt-4o", "gpt-4o-mini", or "gpt-3.5-turbo"
+
+LLM_TEMPERATURE = 0.5  # Controls randomness of responses (0 = more deterministic, 1 = more random)
+```
+### Environment Variables
+
+Create a `.env` file in the root directory to configure API keys for the LLM engines. The file should include:
+
+For OpenAI Engine:
+
+```plaintext
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+For Groq API Engine:
+
+```plaintext
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+Replace `your_openai_api_key_here` and `your_groq_api_key_here` with your actual API keys.
 
 ### Running the Application
 
