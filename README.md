@@ -145,5 +145,8 @@ If you want to download the gaame source code, here's the GitHub repository:
 
 ## Credits
 
-This project is part of a master's degree thesis in Artificial Intelligence. The project was developed by Danilo Vaccalluzzo.
+This project is part of a master's degree thesis in Artificial Intelligence. The project was developed by [Danilo Vaccalluzzo](https://www.linkedin.com/in/danilovaccalluzzo/).
+
+You can contact me at:  
+[danilo.vaccalluzzo@gmail.com](mailto:danilo.vaccalluzzo@gmail.com)
 
