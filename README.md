@@ -1,4 +1,4 @@
-# AI CASTWAY - Can a LLM survive on a remote island?
+# AI CASTAWAY - Can a LLM survive on a remote island?
 
 This project showcases an advanced AI-driven survival game where the AI agent is powered by large language models (LLMs). The system allows the AI to navigate complex survival scenarios dynamically, adapting its behavior based on its environment and experiences.
 
@@ -95,12 +95,18 @@ To start using the project:
 
 ### Running the Application
 
-Run the application with `uvicorn`:
-```bash
-python.exe .\run.py
-```
+1. Start the server using `uvicorn`:
+   ```bash
+   python.exe .\run.py
+   ```
+   The API will be accessible at `http://127.0.0.1:8000`.
 
-The API will be accessible at `http://127.0.0.1:8000`.
+2. After the server is running, you can launch the game:
+
+   - Navigate to the `game` folder.
+   - Inside, you will find subfolders for Windows, Linux, and Mac. Choose the appropriate version for your operating system and launch the corresponding executable.
+
+**Note:** The server must be started and running before launching the game executable. Ensure that the API is live at `http://127.0.0.1:8000` for the game to function properly.
 
 ## API Endpoints
 
@@ -116,3 +122,10 @@ The API provides detailed error messages and status codes to help with debugging
 ## Logging
 
 The application uses Python's `logging` module for tracking important events and errors. Logs are displayed in the console and can be further configured in `logging.basicConfig`.
+
+## Credits
+
+This project is part of a master's degree thesis in Artificial Intelligence. The project was developed by [Danilo Vaccalluzzo](https://www.linkedin.com/in/danilovaccalluzzo/).
+
+You can contact me at:  
+[danilo.vaccalluzzo@gmail.com](mailto:danilo.vaccalluzzo@gmail.com)
