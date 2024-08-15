@@ -91,14 +91,31 @@ def get_next_action(action_request: ActionRequest = Body(...)):
             )
 
         try:
-            # Get the next action from Decision class
+            # Log before initializing the Decision class
+            logger.info("Initializing Decision class.")
+
+            # Initialize Decision class
             decisions = Decision(memory)
-            next_action = decisions.get_next_action()
+
         except Exception as e:
-            logger.error(f"Error occurred while making a decision: {str(e)}")
+            logger.error(f"Error occurred while initializing Decision class: {str(e)}")
             return JSONResponse(
                 status_code=500,
-                content={"message": "Error occurred while making a decision", "error": str(e)}
+                content={"message": "Error occurred while initializing Decision class", "error": str(e)}
+            )
+
+        try:
+            # Log before calling get_next_action
+            logger.info("Calling get_next_action on Decision class.")
+
+            # Get the next action from Decision class
+            next_action = decisions.get_next_action()
+
+        except Exception as e:
+            logger.error(f"Error occurred while getting next action: {str(e)}")
+            return JSONResponse(
+                status_code=500,
+                content={"message": "Error occurred while getting next action", "error": str(e)}
             )
 
         try:
