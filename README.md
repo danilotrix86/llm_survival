@@ -119,7 +119,7 @@ Replace `your_openai_api_key_here` and `your_groq_api_key_here` with your actual
 2. After the server is running, you can launch the game:
 
    - Navigate to the `game` folder.
-   - Inside, you will find subfolders for Windows, Linux, and Mac. Choose the appropriate version for your operating system and launch the corresponding executable.
+   - Inside, you will find subfolders for Windows and Linux. Choose the appropriate version for your operating system and launch the corresponding executable.
 
 **Note:** The server must be started and running before launching the game executable. Ensure that the API is live at `http://127.0.0.1:8000` for the game to function properly.
 
