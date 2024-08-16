@@ -3,7 +3,7 @@
         {
             "name": "stick",
             "description": "Sticks are basic materials used for crafting various items.",
-            "quantity": 3
+            "quantity": 0
         },
         {
             "name": "wood",
@@ -13,12 +13,12 @@
         {
             "name": "stone",
             "description": "Stones are versatile materials essential for crafting tools and structures.",
-            "quantity": 3
+            "quantity": 0
         },
         {
             "name": "fibers",
             "description": "Fibers are lightweight materials used for crafting ropes and other items.",
-            "quantity": 4
+            "quantity": 0
         },
         {
             "name": "axe",

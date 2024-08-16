@@ -1,36 +1,8 @@
 {
     "logs": [
         {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
-        },
-        {
-            "name": "pick_sticks",
-            "description": "The action 'pick_sticks' was executed with status 'success' and message: 'You picked up Stick.'."
-        },
-        {
-            "name": "pick_stones",
-            "description": "The action 'pick_stones' was executed with status 'success' and message: 'You picked up Stone.'."
-        },
-        {
-            "name": "pick_stones",
-            "description": "The action 'pick_stones' was executed with status 'success' and message: 'You picked up Stone.'."
-        },
-        {
-            "name": "pick_stones",
-            "description": "The action 'pick_stones' was executed with status 'success' and message: 'You picked up Stone.'."
-        },
-        {
-            "name": "pick_fibers",
-            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'You picked up Fibers.'."
-        },
-        {
-            "name": "pick_fibers",
-            "description": "The action 'pick_fibers' was executed with status 'success' and message: 'You picked up Fibers.'."
-        },
-        {
-            "name": "craft_rope",
-            "description": "The action 'craft_rope' was executed with status 'success' and message: 'You crafted Rope.'."
+            "name": "explore",
+            "description": "The action 'explore' was executed with status 'success' and message: 'Explored Nature. There is nature around you'."
         }
     ]
 }
