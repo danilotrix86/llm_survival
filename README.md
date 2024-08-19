@@ -140,7 +140,7 @@ The application uses Python's `logging` module for tracking important events and
 
 ## Source Code
 
-If you want to download the gaame source code, here's the GitHub repository:  
+If you want to download the game source code, here's the GitHub repository:  
 [https://github.com/danilotrix86/llm_survival_source](https://github.com/danilotrix86/llm_survival_source)
 
 ## Credits
